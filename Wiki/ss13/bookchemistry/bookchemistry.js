@@ -8,7 +8,7 @@ infoButtons.forEach(button => {
         if (infoDisplay.style.display === 'block') {
             infoDisplay.style.display = 'none';
         } else {
-            const lines = info.split('\\n'); //  **Важно: экранируем \n!**
+            const lines = info.split('\\n');
             let numberedList = '';
             for (let i = 0; i < Math.min(lines.length, 3); i++) {
                 numberedList += `${i + 1}. ${lines[i]}<br>`;

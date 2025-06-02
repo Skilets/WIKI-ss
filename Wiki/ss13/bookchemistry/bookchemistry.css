@@ -1,4 +1,3 @@
-/* Новые стили для image-text-button */
 
 .info-button-container {
     display: flex;
@@ -11,15 +10,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1 1 auto; /* Равномерное распределение места между элементами */
-    min-width: 80px; /* Минимальная ширина для элемента */
+    flex: 1 1 auto; 
+    min-width: 80px; 
 }
 
 .image-text-button {
-    /* ... (остальные стили) ... */
-    width: 45%; /* Изменяем ширину */
-    max-width: 100px; /* Добавляем максимальную ширину */
-    height: auto; /* Высота автоматически подстраивается */
+    width: 45%; 
+    max-width: 100px; 
+    height: auto; 
 }
 
 .image-text-button {
@@ -65,7 +63,7 @@
     color: #007bff;
 }
 
-/* Остальные стили для xenobiology.css (без изменений) */
+
 
 .info-display {
     padding: 50px;
@@ -76,10 +74,9 @@
     margin-top: 0px;
     text-align: center;
     display: none;
-    height: 35px; /* Фиксированная высота */
-    width: 20%; /* Ширина info-display */
-    margin: 10px auto; /* Центрируем */
-    /*overflow: auto;  Добавляем прокрутку, если текст не помещается */
+    height: 35px; 
+    width: 20%; 
+    margin: 10px auto; 
 }
 
 .dark-mode .info-display {
