@@ -6,14 +6,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const article1Button = document.getElementById('article1-button');
     const article2Button = document.getElementById('article2-button');
 
-    // Функция для переключения темы (ОСТАВЬТЕ БЕЗ ИЗМЕНЕНИЙ)
+    // Функция для переключения темы 
     function toggleTheme() {
         body.classList.toggle('dark-mode');
         themeToggle.textContent = body.classList.contains('dark-mode') ? '☀️Светлая тема' : '🌑Темная тема';
         localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
     }
 
-    // (ОСТАВЬТЕ БЕЗ ИЗМЕНЕНИЙ)
     const navIcons = document.querySelectorAll('nav button img');
 
     navIcons.forEach(icon => {
@@ -29,17 +28,17 @@ document.addEventListener('DOMContentLoaded', function() {
         icon.setAttribute('src', newSrc);
     });
 
-    // Проверяем сохраненную тему при загрузке страницы (ОСТАВЬТЕ БЕЗ ИЗМЕНЕНИЙ)
+    // Проверяем сохраненную тему при загрузке страницы 
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {
         body.classList.add('dark-mode');
         themeToggle.textContent = '☀️Светлая тема';
     }
 
-    // Обработчик нажатия на кнопку смены темы (ОСТАВЬТЕ БЕЗ ИЗМЕНЕНИЙ)
+    // Обработчик нажатия на кнопку смены темы 
     themeToggle.addEventListener('click', toggleTheme);
 
-    // Функция для загрузки контента (ИЗМЕНЕНА)
+    // Функция для загрузки контента 
     function loadContent(url) {
         console.log("Загружаю:", url);
         content.innerHTML = '';
@@ -73,9 +72,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         const newScript = document.createElement('script');
                         newScript.src = baseUrl + targetScript;
                         newScript.onload = function() {
-                            // **Перемещаем ВЕСЬ код из xenobiology.js И bookchemistry.js сюда!**
                             if (targetScript === 'xenobiology.js') {
-                                const infoButtons = document.querySelectorAll('.icon-button'); // ИЗМЕНЕНО!
+                                const infoButtons = document.querySelectorAll('.icon-button'); 
                                 const infoCells = document.querySelectorAll('.info-cell');
 
                                 infoButtons.forEach(button => {
@@ -100,12 +98,63 @@ document.addEventListener('DOMContentLoaded', function() {
                                     collapsibleContent.classList.toggle('collapsed');
                                     // Меняем стрелочку
                                     if (collapsibleContent.classList.contains('collapsed')) {
-                                        collapsibleButton.textContent = '0-1 уровень ▼';
+                                        collapsibleButton.textContent = '0-1 уровень🔽';
                                     } else {
-                                        collapsibleButton.textContent = '0-1 уровень ▲';
+                                        collapsibleButton.textContent = '0-1 уровень🔼';
                                     }
                                 });
                             
+                                const collapsibleButton1 = document.querySelector('.collapsible-button-1');
+                                const collapsibleContent1 = document.querySelector('.collapsible-content-1');
+                            
+                                collapsibleButton1.addEventListener('click', () => {
+                                    collapsibleContent1.classList.toggle('collapsed');
+                                    // Меняем стрелочку
+                                    if (collapsibleContent1.classList.contains('collapsed')) {
+                                        collapsibleButton1.textContent = '2-3 уровень🔽';
+                                    } else {
+                                        collapsibleButton1.textContent = '2-3 уровень🔼';
+                                    }
+                                });
+                            
+                                const collapsibleButton2 = document.querySelector('.collapsible-button-2');
+                                const collapsibleContent2 = document.querySelector('.collapsible-content-2');
+                            
+                                collapsibleButton2.addEventListener('click', () => {
+                                    collapsibleContent2.classList.toggle('collapsed');
+                                    // Меняем стрелочку
+                                    if (collapsibleContent2.classList.contains('collapsed')) {
+                                        collapsibleButton2.textContent = '4 уровень🔽';
+                                    } else {
+                                        collapsibleButton2.textContent = '4 уровень🔼';
+                                    }
+                                });
+                            
+                                const collapsibleButton3 = document.querySelector('.collapsible-button-3');
+                                const collapsibleContent3 = document.querySelector('.collapsible-content-3');
+                            
+                                collapsibleButton3.addEventListener('click', () => {
+                                    collapsibleContent3.classList.toggle('collapsed');
+                                    // Меняем стрелочку
+                                    if (collapsibleContent3.classList.contains('collapsed')) {
+                                        collapsibleButton3.textContent = '5 уровень🔽';
+                                    } else {
+                                        collapsibleButton3.textContent = '5 уровень🔼';
+                                    }
+                                });
+                            
+                                const collapsibleButton4 = document.querySelector('.collapsible-button-4');
+                                const collapsibleContent4 = document.querySelector('.collapsible-content-4');
+                            
+                                collapsibleButton4.addEventListener('click', () => {
+                                    collapsibleContent4.classList.toggle('collapsed');
+                                    // Меняем стрелочку
+                                    if (collapsibleContent4.classList.contains('collapsed')) {
+                                        collapsibleButton4.textContent = 'спец. уровень🔽';
+                                    } else {
+                                        collapsibleButton4.textContent = 'спец. уровень🔼';
+                                    }
+                                });
                             
                             } else if (targetScript === 'bookchemistry.js') {
                                 // ... (Код bookchemistry.js) ...

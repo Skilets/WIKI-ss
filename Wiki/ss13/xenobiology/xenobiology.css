@@ -13,7 +13,7 @@ h2 {
 
 /* Стили для таблицы */
 .table-container {
-    width: 80%;
+    width: 95%;
     margin: 20px auto;
     border-collapse: collapse;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -35,15 +35,24 @@ h2 {
     text-align: center;
     padding: 10px;
     flex: 1;
+    border-right: 1px solid #c7c7b3;
+}
+
+.table-header:last-child {
+    border-right: none; 
 }
 
 .table-cell {
     padding: 10px;
-    text-align: center;
     flex: 1;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; 
+    justify-content: center; 
+    border-right: 1px solid #2e2e2eab; 
+}
+
+.table-row .table-cell:last-child {
+    border-right: none;
 }
 
 /* Стили для кнопок-иконок */
@@ -51,48 +60,244 @@ h2 {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 5px;
+    padding: 0; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex: 1;
-    width: 100px;
-    height: 100px;
 }
 
 .icon-button img {
-    max-width: 70%; /* Или другой процент, какой вам нравится */
+    max-width: 70%; 
     max-height: 80%;
-    width: auto;    /* Размеры изображения */
+    width: auto;    
     height: auto;
 }
-
-.icon-slaim-0 {
-    display: inline-block;
-    background-image: url('image/Xenobiology/Grey.gif');
-    background-repeat: no-repeat;
-    margin-bottom: 0px;
-    width: 64px;
-    height: 64px;
-    background-position: 0 0;
-}
-
+/*-----------------Что-то-----------------*/
 .icon-slaim-all {
     display: inline-block;
     background-image: url('image/slimes-all.gif');
     background-repeat: no-repeat;
-    margin-bottom: 5px;
-    width: 352px;   /* Размер иконки */
-    height: 352px;
+    margin-left: 27% ;
+    width: 704px;   /* Размер иконки */
+    height: 704px;
     background-image: center;
+    background-position: 5px 5px;
 }
+/*-----------------Все-слаймы-----------------*/
+.icon-slaim-grey {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/Xenobiology/64/grey.gif');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 128px;
+    height: 128px;
+    background-position: 0 0;
+}
+                    /* 1ур */
+.icon-slaim-orange {
+    display: inline-block;
+    background-image: url('image/Xenobiology/64/orange.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    width: 128px;
+    height: 128px;
+    background-position: 0 0;
+}
+.icon-slaim-purple {
+    display: inline-block;
+    background-image: url('image/Xenobiology/64/purple.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    width: 128px;
+    height: 128px;
+    background-position: 0 0;
+}
+.icon-slaim-blue {
+    display: inline-block;
+    background-image: url('image/Xenobiology/64/blue.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    width: 128px;
+    height: 128px;
+    background-position: 0 0;
+}
+.icon-slaim-metal {
+    display: inline-block;
+    background-image: url('image/Xenobiology/64/metal.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    width: 128px;
+    height: 128px;
+    background-position: 0 0;
+}
+                    /* 2ур */
+.icon-slaim-yellow {
+    display: inline-block;
+    background-image: url('image/Xenobiology/64/yellow.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    width: 128px;
+    height: 128px;
+    background-position: 0 0;
+}
+.icon-slaim-dark-purple {
+    display: inline-block;
+    background-image: url('image/Xenobiology/64/dark-purple.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    width: 128px;
+    height: 128px;
+    background-position: 0 0;
+}
+.icon-slaim-dark-blue {
+    display: inline-block;
+    background-image: url('image/Xenobiology/64/dark-blue.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    width: 128px;
+    height: 128px;
+    background-position: 0 0;
+}
+.icon-slaim-silver {
+    display: inline-block;
+    background-image: url('image/Xenobiology/64/silver.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    width: 128px;
+    height: 128px;
+    background-position: 0 0;
+}
+                    /* 3ур */
+.icon-slaim-bluespace {
+    display: inline-block;
+    background-image: url('image/Xenobiology/64/bluespace.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    width: 128px;
+    height: 128px;
+    background-position: 0 0;
+}
+.icon-slaim-dark-sepia {
+    display: inline-block;
+    background-image: url('image/Xenobiology/64/sepia.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    width: 128px;
+    height: 128px;
+    background-position: 0 0;
+}
+.icon-slaim-cerulean {
+    display: inline-block;
+    background-image: url('image/Xenobiology/64/cerulean.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    width: 128px;
+    height: 128px;
+    background-position: 0 0;
+}
+.icon-slaim-pyrite {
+    display: inline-block;
+    background-image: url('image/Xenobiology/64/pyrite.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    width: 128px;
+    height: 128px;
+    background-position: 0 0;
+}
+                    /* 4ур */
+.icon-slaim-red {
+    display: inline-block;
+    background-image: url('image/Xenobiology/64/red.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    width: 128px;
+    height: 128px;
+    background-position: 0 0;
+}
+.icon-slaim-dark-green {
+    display: inline-block;
+    background-image: url('image/Xenobiology/64/green.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    width: 128px;
+    height: 128px;
+    background-position: 0 0;
+}
+.icon-slaim-pink {
+    display: inline-block;
+    background-image: url('image/Xenobiology/64/pink.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    width: 128px;
+    height: 128px;
+    background-position: 0 0;
+}
+.icon-slaim-gold {
+    display: inline-block;
+    background-image: url('image/Xenobiology/64/gold.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    width: 128px;
+    height: 128px;
+    background-position: 0 0;
+}
+                    /* 5ур */
+.icon-slaim-oil {
+    display: inline-block;
+    background-image: url('image/Xenobiology/64/oil.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    width: 128px;
+    height: 128px;
+    background-position: 0 0;
+}
+.icon-slaim-dark-black {
+    display: inline-block;
+    background-image: url('image/Xenobiology/64/black.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    width: 128px;
+    height: 128px;
+    background-position: 0 0;
+}
+.icon-slaim-light-pink {
+    display: inline-block;
+    background-image: url('image/Xenobiology/64/light-pink.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    width: 128px;
+    height: 128px;
+    background-position: 0 0;
+}
+.icon-slaim-adamantite {
+    display: inline-block;
+    background-image: url('image/Xenobiology/64/adamantite.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    width: 128px;
+    height: 128px;
+    background-position: 0 0;
+}
+                    /* спец ур */
+.icon-slaim-rainbow {
+    display: inline-block;
+    background-image: url('image/Xenobiology/64/rainbow.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    width: 128px;
+    height: 128px;
+    background-position: 0 0;
+}
+/*--------------------------------------------*/
 
 .icon-text {
     font-size: 0.8em;
 }
 
-/* Стили для конкретных иконок (ПРИМЕР! ЗАМЕНИТЕ КООРДИНАТЫ!) */
+
 .bluesface-icon {
     width: 100px;
     height: 100px;
@@ -123,15 +328,6 @@ h2 {
     background-color: #8a8a8a6e;
 }
 
-/* Медиа-запросы для адаптивности (ПРИМЕР) */
-@media (max-width: 768px) {
-    .table-container {
-        width: 95%;
-    }
-    .table-header {
-        display: none;
-    }
-}
 
 /* Стили для темной темы */
 .dark-mode .table-container {
@@ -144,6 +340,7 @@ h2 {
     background-color: #333;
     color: #f4f4f4;
     border-bottom: 1px solid #555;
+    border-right: 1px solid #555;
 }
 
 .dark-mode .table-row {
@@ -158,14 +355,82 @@ h2 {
 .dark-mode .icon-button {
     color: #f4f4f4;
 }
+/*          Света           */
+.red {
+    background: linear-gradient(90deg, #752438, #a53030, #cf573c, #a53030, #411d31);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: red 3s linear infinite;
+}
+@keyframes red {
+    from {background-position: 0% center}         
+    to {background-position: 200% center}
+}
+.plasma {
+    background: linear-gradient(90deg, #a23e8c, #df84a5, #c65197, #a23e8c, #7a367b);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: plasma 3s linear infinite;
+}
+@keyframes plasma {
+    from {background-position: 0% center}         
+    to {background-position: 200% center}
+}
+.bluespace {
+    background: linear-gradient(90deg, #82bcd1, #a0bed3, #82bcd1, #a0bed3, #4ba4b6);
+    background-size: 150% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: bluespace 1.5s linear infinite;
+}
+@keyframes bluespace {
+    from {background-position: 0% center}         
+    to {background-position: 200% center}
+}
+.rainbow {
+    background: linear-gradient(90deg,  #fb6212, #ff2404, #d1298e, #7421b1, #3b48ba, #016fc4, #01c2af, #00b500, #7fd100, #feef00, #fac713, #f79f23);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 3s linear infinite;
+}
+@keyframes rainbow {
+    from {background-position: 0% center}         
+    to {background-position: 200% center}
+}
+.green {
+    background: linear-gradient(90deg,  #00AB00, #00CF00, #00BC00, #008000, #008D00);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: green 3s linear infinite;
+}
+@keyframes green {
+    from {background-position: 0% center}         
+    to {background-position: 200% center}
+}
 
-/* Если нужно менять цвет текста иконок */
+/*--------------------------*/
+
+
+/*             Вкладки             */
+/*               0-1               */
 .dark-mode .collapsible-button {
     background-color: #222;
     color: #f4f4f4;
     box-shadow: 0 0 0px #ffffff1a;
 }
-
+.dark-mode .table-cell {
+    border-bottom: 1px solid #555;
+    border-right: 1px solid #555; 
+}
 .collapsible-button {
     width: 100%;
     padding: 10px;
@@ -176,15 +441,137 @@ h2 {
     font-weight: bold;
     text-align: center;
 }
-
 .collapsible-content {
-    display: block; /* Показываем по умолчанию */
-    max-height: 250px; /* Пример: большая высота */
+    display: block; 
+    max-height: 5000px; 
     overflow: hidden;
-    transition: max-height 0.5s ease-out;
+    transition: max-height 1.5s ease-out;
 }
-
 /* Скрываем контент */
 .collapsible-content.collapsed {
+    max-height: 0; 
+}
+
+/*               2-3               */
+.dark-mode .collapsible-button-1 {
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.dark-mode .table-cell {
+    border-bottom: 1px solid #555;
+    border-right: 1px solid #555; 
+}
+.collapsible-button-1 {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+.collapsible-content-1 {
+    display: block; 
+    max-height: 5000px; 
+    overflow: hidden;
+    transition: max-height 1.5s ease-out;
+}
+/* Скрываем контент */
+.collapsible-content-1.collapsed {
+    max-height: 0; 
+}
+
+/*               4               */
+.dark-mode .collapsible-button-2 {
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.dark-mode .table-cell {
+    border-bottom: 1px solid #555;
+    border-right: 1px solid #555; 
+}
+.collapsible-button-2 {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+.collapsible-content-2 {
+    display: block; 
+    max-height: 5000px; 
+    overflow: hidden;
+    transition: max-height 1.5s ease-out;
+}
+/* Скрываем контент */
+.collapsible-content-2.collapsed {
+    max-height: 0; 
+}
+
+/*               5               */
+.dark-mode .collapsible-button-3 {
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.dark-mode .table-cell {
+    border-bottom: 1px solid #555;
+    border-right: 1px solid #555; 
+}
+.collapsible-button-3 {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+.collapsible-content-3 {
+    display: block; 
+    max-height: 5000px; 
+    overflow: hidden;
+    transition: max-height 1.5s ease-out;
+}
+/* Скрываем контент */
+.collapsible-content-3.collapsed {
+    max-height: 0; 
+}
+
+/*               6               */
+.dark-mode .collapsible-button-4 {
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.dark-mode .table-cell {
+    border-bottom: 1px solid #555;
+    border-right: 1px solid #555; 
+}
+.collapsible-button-4 {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+.collapsible-content-4 {
+    display: block; 
+    max-height: 5000px; 
+    overflow: hidden;
+    transition: max-height 1.5s ease-out;
+}
+/* Скрываем контент */
+.collapsible-content-4.collapsed {
     max-height: 0; 
 }
