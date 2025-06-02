@@ -1,0 +1,190 @@
+/* Общие стили */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #d4d4d4;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Стили для таблицы */
+.table-container {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #dfdfdf;
+}
+
+.table-row {
+    display: flex;
+    border-bottom: 1px solid #2e2e2eab;
+}
+
+.table-row:last-child {
+    border-bottom: none;
+}
+
+.table-header {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    flex: 1;
+}
+
+.table-cell {
+    padding: 10px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Стили для кнопок-иконок */
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    width: 100px;
+    height: 100px;
+}
+
+.icon-button img {
+    max-width: 70%; /* Или другой процент, какой вам нравится */
+    max-height: 80%;
+    width: auto;    /* Размеры изображения */
+    height: auto;
+}
+
+.icon-slaim-0 {
+    display: inline-block;
+    background-image: url('image/Xenobiology/Grey.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    width: 64px;
+    height: 64px;
+    background-position: 0 0;
+}
+
+.icon-slaim-all {
+    display: inline-block;
+    background-image: url('image/slimes-all.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+    width: 352px;   /* Размер иконки */
+    height: 352px;
+    background-image: center;
+}
+
+.icon-text {
+    font-size: 0.8em;
+}
+
+/* Стили для конкретных иконок (ПРИМЕР! ЗАМЕНИТЕ КООРДИНАТЫ!) */
+.bluesface-icon {
+    width: 100px;
+    height: 100px;
+    background-position: 1 1; /* Пример координат */
+}
+
+.adamantite-icon {
+    width: 96px;
+    height: 96px;
+    background-position: 0 0; /* Пример координат */
+}
+
+/* ... Стили для остальных иконок ... */
+
+/* Стили для ячеек с информацией */
+.info-cell {
+    text-align: left;
+    display: none; /* Скрываем по умолчанию */
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.info-cell p {
+    margin: 0;
+}
+
+.table-row:hover {
+    background-color: #8a8a8a6e;
+}
+
+/* Медиа-запросы для адаптивности (ПРИМЕР) */
+@media (max-width: 768px) {
+    .table-container {
+        width: 95%;
+    }
+    .table-header {
+        display: none;
+    }
+}
+
+/* Стили для темной темы */
+.dark-mode .table-container {
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 10px #ffffff1a;
+}
+
+.dark-mode .table-header {
+    background-color: #333;
+    color: #f4f4f4;
+    border-bottom: 1px solid #555;
+}
+
+.dark-mode .table-row {
+    border-bottom: 1px solid #555;
+}
+
+.dark-mode .info-cell {
+    border: 1px solid #555;
+    color: #f4f4f4;
+}
+
+.dark-mode .icon-button {
+    color: #f4f4f4;
+}
+
+/* Если нужно менять цвет текста иконок */
+.dark-mode .collapsible-button {
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+
+.collapsible-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+
+.collapsible-content {
+    display: block; /* Показываем по умолчанию */
+    max-height: 250px; /* Пример: большая высота */
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+/* Скрываем контент */
+.collapsible-content.collapsed {
+    max-height: 0; 
+}

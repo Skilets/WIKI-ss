@@ -1,0 +1,40 @@
+`
+            <h2>Статья 1</h2>
+            <p>Ссылки на игровые серверы:</p>
+            <div class="server-buttons">
+                <button class="server-link-button" data-url="https://play.ss13-bluemoon.ru/">
+                    <img src="images/bluemoon-96.png" alt="Bluemoon">
+                    <span>Bluemoon</span>
+                </button>
+                <button class="server-link-button" data-url="https://white.ss13-bluemoon.ru/">
+                    <img src="images/whitemoon-96.png" alt="Whitemoon">
+                    <span>Whitemoon</span>
+                </button>
+            </div>
+            </ul>
+            <div class="article-navigation">
+                <button class="wiki-button" data-path="Wiki/ss13/xenobiology/xenobiology.html">🦠ксенобиология</button>
+                <button class="wiki-button" data-path="Wiki/ss13/bookchemistry/bookchemistry.html">⚗️Книга хими</button>
+                <button class="wiki-button" data-path="Wiki/ss13/rnd/rnd.html">🥽РНД</button>
+            </div>
+        `;
+
+
+
+            <h3>Ссылки на игровые серверa</h3>
+            <div class="server-buttons">
+                <button class="server-link-button" data-url="https://play.ss13-bluemoon.ru/">
+                    <img src="images/bluemoon-96.png" alt="Bluemoon">
+                    <span>Bluemoon</span>
+                </button>
+                <button class="server-link-button" data-url="https://white.ss13-bluemoon.ru/">
+                    <img src="images/whitemoon-96.png" alt="Whitemoon">
+                    <span>Whitemoon</span>
+                </button>
+            </div>
+            </ul>
+            <div class="article-navigation">
+                <button class="wiki-button" data-path="Wiki/ss13/xenobiology/xenobiology.html">🦠ксенобиология</button>
+                <button class="wiki-button" data-path="Wiki/ss13/bookchemistry/bookchemistry.html">⚗️Книга хими</button>
+                <button class="wiki-button" data-path="Wiki/ss13/rnd/rnd.html">🥽РНД</button>
+            </div>

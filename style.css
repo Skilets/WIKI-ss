@@ -1,0 +1,238 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.container {
+    max-width: 1560px;
+    width: 90%;  
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.dark-mode .container {
+    background-color: #222;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.dark-mode header {
+    border-bottom-color: #555;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+nav button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+    background-color: #0056b3;
+}
+
+.dark-mode nav button {
+    background-color: #555;
+    color: #eee;
+}
+
+.dark-mode nav button:hover {
+    background-color: #777;
+}
+
+main {
+    padding: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    color: #777;
+}
+
+.dark-mode footer {
+    border-top-color: #555;
+    color: #bbb;
+}
+/*----------------------------------------------------------------------------
+                        /* ... стили Значков ... */
+
+.server-links {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.server-links li {
+    margin-bottom: 10px;
+}
+
+.server-links a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit; /* Наследует цвет текста от родителя */
+}
+
+.server-links a img {
+    width: 24px; /* Настройте размер значка */
+    height: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.dark-mode .server-links a {
+    color: #eee;
+}
+
+/*----------------------------------------------------------------------------
+                        /* ... стиль кнопок вкладках ... */
+
+.article-navigation {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid #eee;
+}
+
+.dark-mode .article-navigation {
+    border-top-color: #555;
+}
+
+.wiki-button {
+    padding: 8px 12px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #333;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.wiki-button:hover {
+    background-color: #eee;
+    border-color: #bbb;
+}
+
+.dark-mode .wiki-button {
+    background-color: #333;
+    color: #eee;
+    border-color: #555;
+}
+
+.dark-mode .wiki-button:hover {
+    background-color: #555;
+    border-color: #777;
+}
+
+/*----------------------------------------------------------------------------
+                        /* ... стиль кнопки на 2 вкладке ... */
+/*
+.server-buttons {
+    display: flex;
+    flex-direction: column; /* Располагаем кнопки вертикально 
+    gap: 10px; /* Добавляем отступ между кнопками 
+    margin-bottom: 20px;
+}
+
+.server-buttons button {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 250px; /* Задайте желаемую ширину кнопок 
+}
+
+.server-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.dark-mode .server-buttons button {
+    background-color: #384a80;
+    color: #eee;
+}
+
+.dark-mode .server-buttons button:hover {
+    background-color: #5373a8;
+}
+
+.server-buttons button img {
+    width: 24px; /* Настройте размер значка 
+    height: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.server-buttons button span {
+    flex-grow: 1; /* Занимает оставшееся пространство 
+    text-align: left; /* Выравнивает текст слева 
+} */
+/* Стили для кнопок серверов (внутри article1Content) */
+                .server-buttons-container {
+                    display: inline-flex; /* Изменено на inline-flex */
+                    align-items: center; /* Выравниваем вертикально */
+                    gap: 10px;
+                    margin-left: 10px; /* Отступ слева от кнопок */
+                }
+
+                .server-buttons-container button {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 5px;
+                    border: none;
+                    background-color: #0056b3;
+                    color: white;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    transition: background-color 0.3s ease;
+                    width: 80px;
+                    height: 80px;
+                    box-sizing: border-box; /* Важно для правильного отображения */
+                }
+
+                .server-buttons-container button:hover {
+                    background-color: #007bff;
+                }
+
+                .server-buttons-container img {
+                    margin-bottom: 3px;
+                    width: 48px;
+                    height: 48px;
+                }
+
+                .server-buttons-container span {
+                    font-size: 0.7em;
+                    text-align: center;
+                }
