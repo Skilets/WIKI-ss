@@ -178,7 +178,7 @@ h2 {
     height: 128px;
     background-position: 0 0;
 }
-.icon-slaim-dark-sepia {
+.icon-slaim-sepia {
     display: inline-block;
     background-image: url('image/Xenobiology/64/sepia.gif');
     background-repeat: no-repeat;
@@ -215,7 +215,7 @@ h2 {
     height: 128px;
     background-position: 0 0;
 }
-.icon-slaim-dark-green {
+.icon-slaim-green {
     display: inline-block;
     background-image: url('image/Xenobiology/64/green.gif');
     background-repeat: no-repeat;
@@ -310,6 +310,95 @@ h2 {
     background-position: 0 0;
 }
 
+.regenerative {
+    display: inline-block;
+    background-image: url('image/slimecrossing/regenerative.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+
+.stabilized {
+    display: inline-block;
+    background-image: url('image/slimecrossing/stabilized.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+
+.industrial {
+    display: inline-block;
+    background-image: url('image/slimecrossing/industrial.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+/*-------------НАдо доделать------------------*/
+.charged {
+    display: inline-block;
+    background-image: url('image/slimecrossing/charged.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+
+.selfsustaining {
+    display: inline-block;
+    background-image: url('image/slimecrossing/selfsustaining.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+
+.сhilling {
+    display: inline-block;
+    background-image: url('image/slimecrossing/chilling.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+
+.consuming {
+    display: inline-block;
+    background-image: url('image/slimecrossing/consuming.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+
+.recurring {
+    display: inline-block;
+    background-image: url('image/slimecrossing/recurring.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+
+.prismatic {
+    display: inline-block;
+    background-image: url('image/slimecrossing/prismatic.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
 
 /*--------------------------------------------*/
 
@@ -702,5 +791,104 @@ h2 {
 }
 /* Скрываем контент */
 .collapsible-content-6.collapsed {
+    max-height: 0; 
+}
+/*               3               */
+.dark-mode .collapsible-button-7 {
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.dark-mode .table-cell {
+    border-bottom: 1px solid #555;
+    border-right: 1px solid #555; 
+}
+.collapsible-button-7 {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+.collapsible-content-7 {
+    display: block; 
+    max-height: 3400px; 
+    overflow: hidden;
+    transition: max-height 1.5s ease-out;
+}
+/* Скрываем контент */
+.collapsible-content-7.collapsed {
+    max-height: 0; 
+}
+/*               4               */
+.dark-mode .collapsible-button-8 {
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.dark-mode .table-cell {
+    border-bottom: 1px solid #555;
+    border-right: 1px solid #555; 
+}
+.collapsible-button-8 {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+.collapsible-content-8 {
+    display: block; 
+    max-height: 3400px; 
+    overflow: hidden;
+    transition: max-height 1.5s ease-out;
+}
+/* Скрываем контент */
+.collapsible-content-8.collapsed {
+    max-height: 0; 
+}
+/*               5               */
+.dark-mode .collapsible-button-9 {
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.dark-mode .table-cell {
+    border-bottom: 1px solid #555;
+    border-right: 1px solid #555; 
+}
+.collapsible-button-9 {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+.collapsible-content-9 {
+    display: block; 
+    max-height: 3400px; 
+    overflow: hidden;
+    transition: max-height 1.5s ease-out;
+}
+/* Скрываем контент */
+.collapsible-content-9.collapsed {
     max-height: 0; 
 }
