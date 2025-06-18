@@ -1,96 +1,38 @@
-/*const iconButtons = document.querySelectorAll('.icon-button');
-const infoCells = document.querySelectorAll('.info-cell');
+function initializeXenobiologyPage() {
+    console.log("Xenobiology.js: Инициализация Xenobiology-страницы...");
 
-iconButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        // Скрываем все ячейки с информацией
-        infoCells.forEach(cell => {
-            cell.style.display = 'none';
-        });
+    // Получаем все кнопки сворачивания и соответствующее содержимое
+    const collapsibleButtons = [
+        { button: '.collapsible-button', content: '.collapsible-content', textCollapsed: '0-1 уровень🔽', textExpanded: '0-1 уровень🔼' },
+        { button: '.collapsible-button-1', content: '.collapsible-content-1', textCollapsed: '2 уровень🔽', textExpanded: '2 уровень🔼' },
+        { button: '.collapsible-button-2', content: '.collapsible-content-2', textCollapsed: '3 уровень🔽', textExpanded: '3 уровень🔼' },
+        { button: '.collapsible-button-3', content: '.collapsible-content-3', textCollapsed: '5 уровень🔽', textExpanded: '5 уровень🔼' },
+        { button: '.collapsible-button-4', content: '.collapsible-content-4', textCollapsed: 'спец. уровень🔽', textExpanded: 'спец. уровень🔼' },
+        { button: '.collapsible-button-5', content: '.collapsible-content-5', textCollapsed: '<span class="reproductive"></span> Репродуктивный🔽', textExpanded: '<span class="reproductive"></span> Репродуктивный🔼' },
+        { button: '.collapsible-button-6', content: '.collapsible-content-6', textCollapsed: '<span class="burning"></span> Горение🔽', textExpanded: '<span class="burning"></span> Горение🔼' }
+    ];
 
-        // Показываем нужную ячейку
-        const infoId = button.getAttribute('data-info-id');
-        const infoCell = document.getElementById(infoId);
-        if (infoCell) {
-            infoCell.style.display = 'block';
-        }
-    });
-});*/
+    collapsibleButtons.forEach(item => {
+        const button = document.querySelector(item.button);
+        const content = document.querySelector(item.content);
 
-    const collapsibleButton = document.querySelector('.collapsible-button');
-    const collapsibleContent = document.querySelector('.collapsible-content');
+        if (button && content) {
+            // Убеждаемся, что начальное состояние соответствует тексту кнопки
+            if (content.classList.contains('collapsed')) {
+                button.innerHTML = item.textCollapsed; 
+            } else {
+                button.innerHTML = item.textExpanded; 
+            }
 
-    collapsibleButton.addEventListener('click', () => {
-        collapsibleContent.classList.toggle('collapsed');
-        // Меняем стрелочку
-        if (collapsibleContent.classList.contains('collapsed')) {
-            collapsibleButton.textContent = '0-1 уровень🔽';
-        } else {
-            collapsibleButton.textContent = '0-1 уровень🔼';
-        }
-    });
-
-    const collapsibleButton1 = document.querySelector('.collapsible-button-1');
-    const collapsibleContent1 = document.querySelector('.collapsible-content-1');
-
-    collapsibleButton1.addEventListener('click', () => {
-        collapsibleContent1.classList.toggle('collapsed');
-        // Меняем стрелочку
-        if (collapsibleContent1.classList.contains('collapsed')) {
-            collapsibleButton1.textContent = '2-3 уровень🔽';
-        } else {
-            collapsibleButton1.textContent = '2-3 уровень🔼';
+            button.addEventListener('click', () => {
+                content.classList.toggle('collapsed');
+                if (content.classList.contains('collapsed')) {
+                    button.innerHTML = item.textCollapsed; 
+                } else {
+                    button.innerHTML = item.textExpanded;
+                }
+            });
         }
     });
 
-    const collapsibleButton2 = document.querySelector('.collapsible-button-2');
-    const collapsibleContent2 = document.querySelector('.collapsible-content-2');
-
-    collapsibleButton2.addEventListener('click', () => {
-        collapsibleContent2.classList.toggle('collapsed');
-        // Меняем стрелочку
-        if (collapsibleContent2.classList.contains('collapsed')) {
-            collapsibleButton2.textContent = '4 уровень🔽';
-        } else {
-            collapsibleButton2.textContent = '4 уровень🔼';
-        }
-    });
-
-    const collapsibleButton3 = document.querySelector('.collapsible-button-3');
-    const collapsibleContent3 = document.querySelector('.collapsible-content-3');
-
-    collapsibleButton3.addEventListener('click', () => {
-        collapsibleContent3.classList.toggle('collapsed');
-        // Меняем стрелочку
-        if (collapsibleContent3.classList.contains('collapsed')) {
-            collapsibleButton3.textContent = '5 уровень🔽';
-        } else {
-            collapsibleButton3.textContent = '5 уровень🔼';
-        }
-    });
-
-    const collapsibleButton4 = document.querySelector('.collapsible-button-4');
-    const collapsibleContent4 = document.querySelector('.collapsible-content-4');
-
-    collapsibleButton4.addEventListener('click', () => {
-        collapsibleContent4.classList.toggle('collapsed');
-        // Меняем стрелочку
-        if (collapsibleContent4.classList.contains('collapsed')) {
-            collapsibleButton4.textContent = 'спец. уровень🔽';
-        } else {
-            collapsibleButton4.textContent = 'спец. уровень🔼';
-        }
-    });
-
-    const collapsibleButton5 = document.querySelector('.collapsible-button-5');
-    const collapsibleContent5 = document.querySelector('.collapsible-content-5');
-
-    collapsibleButton5.addEventListener('click', () => {
-        collapsibleContent5.classList.toggle('collapsed');
-        // Меняем стрелочку
-        if (collapsibleContent5.classList.contains('collapsed')) {
-            collapsibleButton5.textContent = 'Репродуктивный🔽';
-        } else {
-            collapsibleButton5.textContent = 'Репродуктивный🔼';
-        }
-    });
+}

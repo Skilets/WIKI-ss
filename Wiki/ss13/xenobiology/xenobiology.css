@@ -289,15 +289,28 @@ h2 {
     height: 128px;
     background-position: 0 0;
 }
-.icon-reproductive {
+/*--------------------------------------------*/
+.reproductive {
     display: inline-block;
     background-image: url('image/slimecrossing/reproductive.gif');
     background-repeat: no-repeat;
     margin-bottom: 0px;
-    width: 128px;
-    height: 128px;
+    width: 32px;
+    height: 32px;
     background-position: 0 0;
 }
+
+.burning {
+    display: inline-block;
+    background-image: url('image/slimecrossing/burning.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+
+
 /*--------------------------------------------*/
 
 .icon-text {
@@ -360,6 +373,18 @@ h2 {
 }
 
 /*          Света           */
+.blue {
+    background: linear-gradient(90deg, #253a5e, #3c5e8b, #4f8fba, #3c5e8b, #172038);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: blue 3s linear infinite;
+}
+@keyframes blue {
+    from {background-position: 0% center}         
+    to {background-position: 200% center}
+}
 .red {
     background: linear-gradient(90deg, #752438, #a53030, #cf573c, #a53030, #411d31);
     background-size: 200% auto;
@@ -447,9 +472,9 @@ h2 {
 }
 .collapsible-content {
     display: block; 
-    max-height: 5000px; 
+    max-height: 1200px; 
     overflow: hidden;
-    transition: max-height 1.5s ease-out;
+    transition: max-height 1.0s ease-out;
 }
 /* Скрываем контент */
 .collapsible-content.collapsed {
@@ -478,9 +503,9 @@ h2 {
 }
 .collapsible-content-1 {
     display: block; 
-    max-height: 5000px; 
+    max-height: 1900px; 
     overflow: hidden;
-    transition: max-height 1.5s ease-out;
+    transition: max-height 1.0s ease-out;
 }
 /* Скрываем контент */
 .collapsible-content-1.collapsed {
@@ -509,9 +534,9 @@ h2 {
 }
 .collapsible-content-2 {
     display: block; 
-    max-height: 5000px; 
+    max-height: 1850px; 
     overflow: hidden;
-    transition: max-height 1.5s ease-out;
+    transition: max-height 1.0s ease-out;
 }
 /* Скрываем контент */
 .collapsible-content-2.collapsed {
@@ -540,9 +565,9 @@ h2 {
 }
 .collapsible-content-3 {
     display: block; 
-    max-height: 5000px; 
+    max-height: 1500px; 
     overflow: hidden;
-    transition: max-height 1.5s ease-out;
+    transition: max-height 1.0s ease-out;
 }
 /* Скрываем контент */
 .collapsible-content-3.collapsed {
@@ -571,15 +596,52 @@ h2 {
 }
 .collapsible-content-4 {
     display: block; 
-    max-height: 5000px; 
+    max-height: 500px; 
     overflow: hidden;
-    transition: max-height 1.5s ease-out;
+    transition: max-height 1.0s ease-out;
 }
 /* Скрываем контент */
 .collapsible-content-4.collapsed {
     max-height: 0; 
 }
-/*               6               */
+
+        /*----------------------------------------------------------*/
+
+/* Стили для таблицы внутри секции "Репродуктивный", чтобы описание было шире */
+.reproductive-table .table-row .table-cell:first-child {
+    flex: 0 0 200px; 
+    max-width: 200px; 
+    min-width: 200px; 
+}
+
+.reproductive-table .table-row .table-cell:last-child {
+    flex: 1; 
+}
+
+.reproductive-table .table-row.header-row .table-header:first-child {
+    flex: 0 0 200px; 
+    max-width: 200px;
+    min-width: 200px;
+}
+
+.reproductive-table .table-row.header-row .table-header:last-child {
+    flex: 1; 
+}
+
+.reproductive-table .table-cell.icon-button {
+    flex: 0 0 200px; 
+    max-width: 200px;
+    min-width: 200px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.reproductive-table .table-cell.icon-button span {
+    white-space: nowrap;
+}
+/*---------------------------------------*/
+    /*               1               */
 .dark-mode .collapsible-button-5 {
     background-color: #222;
     color: #f4f4f4;
@@ -601,11 +663,44 @@ h2 {
 }
 .collapsible-content-5 {
     display: block; 
-    max-height: 5000px; 
+    max-height: 300px; 
     overflow: hidden;
     transition: max-height 1.5s ease-out;
 }
 /* Скрываем контент */
 .collapsible-content-5.collapsed {
+    max-height: 0; 
+}
+/*               2               */
+.dark-mode .collapsible-button-6 {
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.dark-mode .table-cell {
+    border-bottom: 1px solid #555;
+    border-right: 1px solid #555; 
+}
+.collapsible-button-6 {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+.collapsible-content-6 {
+    display: block; 
+    max-height: 3400px; 
+    overflow: hidden;
+    transition: max-height 1.5s ease-out;
+}
+/* Скрываем контент */
+.collapsible-content-6.collapsed {
     max-height: 0; 
 }

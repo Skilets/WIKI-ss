@@ -6,98 +6,158 @@ document.addEventListener('DOMContentLoaded', function() {
     const article1Button = document.getElementById('article1-button');
     const article2Button = document.getElementById('article2-button');
 
-    // Функция для переключения темы 
+    // Функция для переключения темы
     function toggleTheme() {
         body.classList.toggle('dark-mode');
-        themeToggle.textContent = body.classList.contains('dark-mode') ? '☀️Светлая тема' : '🌑Темная тема';
+        themeToggle.textContent = body.classList.contains('dark-mode') ? '☀️' : '🌑';
         localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
     }
 
-    const navIcons = document.querySelectorAll('nav button img');
-
-    navIcons.forEach(icon => {
-        const currentSrc = icon.getAttribute('src');
-        let newSrc = '';
-
-        if (currentSrc.includes('-dark')) {
-            newSrc = currentSrc.replace('-dark', '');
-        } else {
-            const parts = currentSrc.split('.');
-            newSrc = parts[0] + '-dark.' + parts[1];
-        }
-        icon.setAttribute('src', newSrc);
-    });
-
-    // Проверяем сохраненную тему при загрузке страницы 
+    // Проверяем сохраненную тему при загрузке страницы
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {
         body.classList.add('dark-mode');
-        themeToggle.textContent = '☀️Светлая тема';
+        themeToggle.textContent = '☀️';
     }
 
-    // Обработчик нажатия на кнопку смены темы 
+    // Обработчик нажатия на кнопку смены темы
     themeToggle.addEventListener('click', toggleTheme);
 
-    // Функция для загрузки контента 
+    // Set для отслеживания загруженных скриптов в текущей сессии
+    // Set позволяет быстро проверять наличие элемента и гарантирует уникальность
+    const loadedScripts = new Set();
+    const loadedStyles = new Set();
+
+    // Функция для загрузки контента
     function loadContent(url) {
-        console.log("Загружаю:", url);
-        content.innerHTML = '';
+        // Проверяем, не загружается ли уже этот контент
+        if (content.dataset.loading === 'true' && content.dataset.loadingUrl === url) {
+            console.log(`script.js: Предотвращена повторная загрузка для: ${url}`);
+            return;
+        }
+        content.dataset.loading = 'true';
+        content.dataset.loadingUrl = url;
+
+        console.log("script.js: Загружаю:", url);
+        content.innerHTML = ''; // Очищаем контент
 
         fetch(url)
-            .then(response => response.text())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status} for ${url}`);
+                }
+                return response.text();
+            })
             .then(html => {
                 const parser = new DOMParser();
                 const doc = parser.parseFromString(html, 'text/html');
 
-                const baseUrl = url.substring(0, url.lastIndexOf('/')) + '/';
+                // Определяем базовый URL для загружаемого контента (например, Wiki/ss13/xenobiology/)
+                const baseUrlIndex = url.lastIndexOf('/');
+                const baseUrl = baseUrlIndex !== -1 ? url.substring(0, baseUrlIndex + 1) : '';
 
-                // Изменяем пути к CSS
+                // Изменяем пути к CSS и добавляем их в head
                 const cssLinks = doc.querySelectorAll('link[rel="stylesheet"]');
                 cssLinks.forEach(link => {
                     let href = link.getAttribute('href');
-                    if (href && !href.startsWith('http') && !href.startsWith('/')) {
-                        link.setAttribute('href', baseUrl + href);
+                    if (href && !href.startsWith('http://') && !href.startsWith('https://') && !href.startsWith('/')) {
+                        href = baseUrl + href;
                     }
-                    document.head.appendChild(link);
+                    if (!loadedStyles.has(href)) {
+                        const newLink = document.createElement('link');
+                        newLink.rel = 'stylesheet';
+                        newLink.href = href;
+                        document.head.appendChild(newLink);
+                        loadedStyles.add(href);
+                        console.log(`script.js: Добавлен CSS: ${href}`);
+                    }
                 });
 
                 // Извлекаем и добавляем содержимое body
                 content.innerHTML = doc.body.innerHTML;
 
-                // **Обработка xenobiology.js и bookchemistry.js**
-                if (url.includes('xenobiology.html') || url.includes('bookchemistry.html') || url.includes('rndbook.html')) {
-                    const targetScript = url.includes('xenobiology.html') ? 'xenobiology.js' : 'bookchemistry.js';
-                    const scriptElement = doc.querySelector(`script[src="${targetScript}"]`);
-                    if (scriptElement) {
-                        const newScript = document.createElement('script');
-                        newScript.src = baseUrl + targetScript;
-                        newScript.onload = function() {
-                            if (targetScript === 'xenobiology.js');
-                            const savedTheme = localStorage.getItem('theme');
-                            if (savedTheme === 'dark') {
-                                document.body.classList.add('dark-mode');
-                            }
-                        };
-                        document.body.appendChild(newScript);
+                // **Обработка JS**
+                let targetScript = null;
+                let initFunctionName = null; 
+
+                if (url.includes('xenobiology.html')) {
+                    targetScript = 'xenobiology.js';
+                    initFunctionName = 'initializeXenobiologyPage';
+                } else if (url.includes('bookchemistry.html')) {
+                    targetScript = 'bookchemistry.js';
+                    initFunctionName = 'initializeBookChemistryPage';
+                } else if (url.includes('rnd.html')) {
+                    targetScript = 'rnd.js';
+                }
+
+                // Загружаем скрипт, если он еще не был загружен
+                if (targetScript && !loadedScripts.has(targetScript)) {
+                    const newScript = document.createElement('script');
+                    newScript.src = baseUrl + targetScript;
+                    newScript.onload = function() {
+                        console.log(`script.js: ${targetScript} загружен.`);
+                        loadedScripts.add(targetScript); // Добавляем в Set загруженных скриптов
+
+                        // Вызываем функцию инициализации, если она существует в глобальной области
+                        if (initFunctionName && typeof window[initFunctionName] === 'function') {
+                            window[initFunctionName]();
+                        } else if (initFunctionName) {
+                            console.warn(`script.js: Функция ${initFunctionName} не найдена после загрузки ${targetScript}.`);
+                        }
+                    };
+                    newScript.onerror = function() {
+                        console.error(`script.js: Ошибка загрузки скрипта: ${targetScript}`);
+                    };
+                    document.body.appendChild(newScript);
+                } else if (targetScript && loadedScripts.has(targetScript)) {
+                    console.log(`script.js: ${targetScript} уже загружен, повторная инициализация.`);
+                    if (initFunctionName && typeof window[initFunctionName] === 'function') {
+                        window[initFunctionName]();
+                    } else if (initFunctionName) {
+                        console.warn(`script.js: Функция ${initFunctionName} не найдена при повторной инициализации.`);
                     }
                 }
 
+                // После успешной загрузки и вставки контента, сбрасываем флаг загрузки
+                content.dataset.loading = 'false';
+                delete content.dataset.loadingUrl;
+
             })
             .catch(error => {
-                console.error('Ошибка загрузки:', error);
+                console.error('script.js: Ошибка загрузки контента:', error);
                 content.innerHTML = '<p>Ошибка загрузки содержимого.</p>';
+                content.dataset.loading = 'false';
+                delete content.dataset.loadingUrl;
             });
     }
 
+    // Делегирование событий для кнопок .wiki-button (внутри динамически загруженного контента)
+    content.addEventListener('click', function(event) {
+        const target = event.target.closest('.wiki-button');
+        if (target) {
+            const path = target.getAttribute('data-path');
+            loadContent(path);
+        }
+    });
 
-    // Обработчики нажатий на кнопки навигации
+    // Делегирование событий для кнопок .server-link-button (внутри динамически загруженного контента)
+    content.addEventListener('click', function(event) {
+        const target = event.target.closest('.server-link-button');
+        if (target) {
+            const url = target.getAttribute('data-url');
+            window.location.href = url;
+        }
+    });
+
+
+    // Обработчики нажатий на кнопки навигации в главном меню
     homeButton.addEventListener('click', function() {
-        content.innerHTML = '<h2>Добро пожаловать!</h2><p>Это главная страница вики.</p>';
+        content.innerHTML = '<h2 class="sena-s">Добро пожаловать!</h2><p class="sena-s">Это главная страница вики.</p>';
     });
 
     article1Button.addEventListener('click', function() {
         content.innerHTML = `
-            <h2 class="sena-s">Ссылки на игровые серверы: 
+            <h2 class="sena-s">Ссылки на игровые серверы:
             <p>
                 <span class="server-buttons-container">
                     <button class="server-link-button" data-url="https://play.ss13-bluemoon.ru/">
@@ -116,41 +176,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 <button class="wiki-button" data-path="Wiki/ss13/rnd/rnd.html">🥽РНД</button>
             </div>
         `;
-
-        // Добавляем обработчики для кнопок серверов после их загрузки 
-        const serverLinkButtons = document.querySelectorAll('.server-link-button');
-        serverLinkButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                const url = this.getAttribute('data-url');
-                window.location.href = url;
-            });
-        });
-
-        const wikiButtons = document.querySelectorAll('.wiki-button');
-        wikiButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                const path = this.getAttribute('data-path');
-                loadContent(path);
-            });
-        });
     });
 
     article2Button.addEventListener('click', function() {
-        content.innerHTML =  `
-            <h2 class="sena-s">🕹️ ИГРЫ 🎮
-            <p>Игры которые вы сможете пойграть.</p>
+        content.innerHTML =  ` 
+        <h2 class="sena-s">🕹️ ИГРЫ 🎮</h2>
+        <p class="sena-s">Игры которые вы сможете пойграть.</p>
             <div class="article-navigation">
                 <button class="wiki-button" data-path="Game/sapper/sapper.html">Сапёр</button>
                 <button class="wiki-button" data-path="Wiki/topicB.html">Тема B</button>
             </div>
         `;
-
-        const wikiButtons = document.querySelectorAll('.wiki-button');
-        wikiButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                const path = this.getAttribute('data-path');
-                loadContent(path);
-            });
-        });
     });
 });

@@ -38,18 +38,35 @@ header {
 
 nav {
     display: flex;
-    gap: 10px;
+    align-items: center; 
     margin-bottom: 20px;
+    margin-top: 10px;
+    position: relative; 
+}
+
+/* Стили для новой группы кнопок, которые будут по центру */
+.nav-left-group {
+    display: flex; 
+    gap: 5px; 
+    justify-content: center;
+    flex-grow: 1; 
+}
+
+/* Стили для theme-toggle, если нужен специфичный отступ или вид */
+#theme-toggle {
+    position: absolute;
+    right: 20px;
 }
 
 nav button {
-    padding: 10px 15px;
+    padding: 10px 10px;
     border: none;
     background-color: #007bff;
     color: white;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    white-space: nowrap;
 }
 
 nav button:hover {
