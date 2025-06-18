@@ -65,101 +65,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 content.innerHTML = doc.body.innerHTML;
 
                 // **Обработка xenobiology.js и bookchemistry.js**
-                if (url.includes('xenobiology.html') || url.includes('bookchemistry.html')) {
+                if (url.includes('xenobiology.html') || url.includes('bookchemistry.html') || url.includes('rndbook.html')) {
                     const targetScript = url.includes('xenobiology.html') ? 'xenobiology.js' : 'bookchemistry.js';
                     const scriptElement = doc.querySelector(`script[src="${targetScript}"]`);
                     if (scriptElement) {
                         const newScript = document.createElement('script');
                         newScript.src = baseUrl + targetScript;
                         newScript.onload = function() {
-                            if (targetScript === 'xenobiology.js') {
-                                const infoButtons = document.querySelectorAll('.icon-button'); 
-                                const infoCells = document.querySelectorAll('.info-cell');
-
-                                infoButtons.forEach(button => {
-                                    button.addEventListener('click', () => {
-                                        infoCells.forEach(cell => {
-                                            cell.style.display = 'none';
-                                        });
-                                    
-                                        const iconName = button.getAttribute('data-info-id');
-                                        const infoCell = document.getElementById(iconName);
-                                        if (infoCell) {
-                                            infoCell.style.display = 'block';
-                                        }
-                                    });
-                                });
-                            
-                                // **Код для сворачивания раздела**
-                                const collapsibleButton = document.querySelector('.collapsible-button');
-                                const collapsibleContent = document.querySelector('.collapsible-content');
-                            
-                                collapsibleButton.addEventListener('click', () => {
-                                    collapsibleContent.classList.toggle('collapsed');
-                                    // Меняем стрелочку
-                                    if (collapsibleContent.classList.contains('collapsed')) {
-                                        collapsibleButton.textContent = '0-1 уровень🔽';
-                                    } else {
-                                        collapsibleButton.textContent = '0-1 уровень🔼';
-                                    }
-                                });
-                            
-                                const collapsibleButton1 = document.querySelector('.collapsible-button-1');
-                                const collapsibleContent1 = document.querySelector('.collapsible-content-1');
-                            
-                                collapsibleButton1.addEventListener('click', () => {
-                                    collapsibleContent1.classList.toggle('collapsed');
-                                    // Меняем стрелочку
-                                    if (collapsibleContent1.classList.contains('collapsed')) {
-                                        collapsibleButton1.textContent = '2-3 уровень🔽';
-                                    } else {
-                                        collapsibleButton1.textContent = '2-3 уровень🔼';
-                                    }
-                                });
-                            
-                                const collapsibleButton2 = document.querySelector('.collapsible-button-2');
-                                const collapsibleContent2 = document.querySelector('.collapsible-content-2');
-                            
-                                collapsibleButton2.addEventListener('click', () => {
-                                    collapsibleContent2.classList.toggle('collapsed');
-                                    // Меняем стрелочку
-                                    if (collapsibleContent2.classList.contains('collapsed')) {
-                                        collapsibleButton2.textContent = '4 уровень🔽';
-                                    } else {
-                                        collapsibleButton2.textContent = '4 уровень🔼';
-                                    }
-                                });
-                            
-                                const collapsibleButton3 = document.querySelector('.collapsible-button-3');
-                                const collapsibleContent3 = document.querySelector('.collapsible-content-3');
-                            
-                                collapsibleButton3.addEventListener('click', () => {
-                                    collapsibleContent3.classList.toggle('collapsed');
-                                    // Меняем стрелочку
-                                    if (collapsibleContent3.classList.contains('collapsed')) {
-                                        collapsibleButton3.textContent = '5 уровень🔽';
-                                    } else {
-                                        collapsibleButton3.textContent = '5 уровень🔼';
-                                    }
-                                });
-                            
-                                const collapsibleButton4 = document.querySelector('.collapsible-button-4');
-                                const collapsibleContent4 = document.querySelector('.collapsible-content-4');
-                            
-                                collapsibleButton4.addEventListener('click', () => {
-                                    collapsibleContent4.classList.toggle('collapsed');
-                                    // Меняем стрелочку
-                                    if (collapsibleContent4.classList.contains('collapsed')) {
-                                        collapsibleButton4.textContent = 'спец. уровень🔽';
-                                    } else {
-                                        collapsibleButton4.textContent = 'спец. уровень🔼';
-                                    }
-                                });
-                            
-                            } else if (targetScript === 'bookchemistry.js') {
-                                // ... (Код bookchemistry.js) ...
-                            }
-                        
+                            if (targetScript === 'xenobiology.js');
                             const savedTheme = localStorage.getItem('theme');
                             if (savedTheme === 'dark') {
                                 document.body.classList.add('dark-mode');
@@ -184,7 +97,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     article1Button.addEventListener('click', function() {
         content.innerHTML = `
-            <p>Ссылки на игровые серверы:
+            <h2 class="sena-s">Ссылки на игровые серверы: 
+            <p>
                 <span class="server-buttons-container">
                     <button class="server-link-button" data-url="https://play.ss13-bluemoon.ru/">
                         <img src="images/bluemoon-96.png" alt="Bluemoon">
@@ -223,10 +137,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     article2Button.addEventListener('click', function() {
         content.innerHTML =  `
-            <h2>Статья 2</h2>
-            <p>Еще одна увлекательная статья для изучения.</p>
+            <h2 class="sena-s">🕹️ ИГРЫ 🎮
+            <p>Игры которые вы сможете пойграть.</p>
             <div class="article-navigation">
-                <button class="wiki-button" data-path="Wiki/topicA.html">Тема A</button>
+                <button class="wiki-button" data-path="Game/sapper/sapper.html">Сапёр</button>
                 <button class="wiki-button" data-path="Wiki/topicB.html">Тема B</button>
             </div>
         `;

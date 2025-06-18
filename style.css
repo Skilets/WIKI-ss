@@ -150,54 +150,11 @@ footer {
     background-color: #555;
     border-color: #777;
 }
-
-/*----------------------------------------------------------------------------
-                        /* ... стиль кнопки на 2 вкладке ... */
-/*
-.server-buttons {
-    display: flex;
-    flex-direction: column; /* Располагаем кнопки вертикально 
-    gap: 10px; /* Добавляем отступ между кнопками 
-    margin-bottom: 20px;
+.sena-s {
+    text-align: center;
 }
 
-.server-buttons button {
-    display: flex;
-    align-items: center;
-    padding: 10px 15px;
-    border: none;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    width: 250px; /* Задайте желаемую ширину кнопок 
-}
 
-.server-buttons button:hover {
-    background-color: #0056b3;
-}
-
-.dark-mode .server-buttons button {
-    background-color: #384a80;
-    color: #eee;
-}
-
-.dark-mode .server-buttons button:hover {
-    background-color: #5373a8;
-}
-
-.server-buttons button img {
-    width: 24px; /* Настройте размер значка 
-    height: 24px;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
-.server-buttons button span {
-    flex-grow: 1; /* Занимает оставшееся пространство 
-    text-align: left; /* Выравнивает текст слева 
-} */
 /* Стили для кнопок серверов (внутри article1Content) */
                 .server-buttons-container {
                     display: inline-flex; /* Изменено на inline-flex */

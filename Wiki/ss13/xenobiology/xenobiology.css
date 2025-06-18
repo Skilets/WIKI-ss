@@ -29,6 +29,14 @@ h2 {
     border-bottom: none;
 }
 
+.table-row:hover {
+    background-color: #8a8a8a6e;
+}
+
+.table-row .table-cell:last-child {
+    border-right: none;
+}
+
 .table-header {
     background-color: #f0f0f0;
     font-weight: bold;
@@ -51,11 +59,7 @@ h2 {
     border-right: 1px solid #2e2e2eab; 
 }
 
-.table-row .table-cell:last-child {
-    border-right: none;
-}
-
-/* Стили для кнопок-иконок */
+/* Стили Изображение */
 .icon-button {
     background: none;
     border: none;
@@ -67,12 +71,6 @@ h2 {
     justify-content: center;
 }
 
-.icon-button img {
-    max-width: 70%; 
-    max-height: 80%;
-    width: auto;    
-    height: auto;
-}
 /*-----------------Что-то-----------------*/
 .icon-slaim-all {
     display: inline-block;
@@ -291,6 +289,15 @@ h2 {
     height: 128px;
     background-position: 0 0;
 }
+.icon-reproductive {
+    display: inline-block;
+    background-image: url('image/slimecrossing/reproductive.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    width: 128px;
+    height: 128px;
+    background-position: 0 0;
+}
 /*--------------------------------------------*/
 
 .icon-text {
@@ -352,9 +359,6 @@ h2 {
     color: #f4f4f4;
 }
 
-.dark-mode .icon-button {
-    color: #f4f4f4;
-}
 /*          Света           */
 .red {
     background: linear-gradient(90deg, #752438, #a53030, #cf573c, #a53030, #411d31);
@@ -573,5 +577,35 @@ h2 {
 }
 /* Скрываем контент */
 .collapsible-content-4.collapsed {
+    max-height: 0; 
+}
+/*               6               */
+.dark-mode .collapsible-button-5 {
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.dark-mode .table-cell {
+    border-bottom: 1px solid #555;
+    border-right: 1px solid #555; 
+}
+.collapsible-button-5 {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+.collapsible-content-5 {
+    display: block; 
+    max-height: 5000px; 
+    overflow: hidden;
+    transition: max-height 1.5s ease-out;
+}
+/* Скрываем контент */
+.collapsible-content-5.collapsed {
     max-height: 0; 
 }
