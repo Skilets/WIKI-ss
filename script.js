@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const homeButton = document.getElementById('home-button');
     const article1Button = document.getElementById('article1-button');
     const article2Button = document.getElementById('article2-button');
+    const article3Button = document.getElementById('article3-button');
 
     // Функция для переключения темы
     function toggleTheme() {
@@ -171,14 +172,25 @@ document.addEventListener('DOMContentLoaded', function() {
                 </span>
             </p>
             <div class="article-navigation">
-                <button class="wiki-button" data-path="Wiki/ss13/xenobiology/xenobiology.html">🦠ксенобиология</button>
-                <button class="wiki-button" data-path="Wiki/ss13/bookchemistry/bookchemistry.html">⚗️Книга хими</button>
-                <button class="wiki-button" data-path="Wiki/ss13/rnd/rnd.html">🥽РНД</button>
+                <button class="wiki-button" data-path="Wiki/ss13/xenobiology/xenobiology.html">🦠ксенобиология🦠</button>
+                <button class="wiki-button" data-path="Wiki/ss13/book-chemistry/bookchemistry.html">⚗️Книга хими⚗️</button>
+                <button class="wiki-button" data-path="Wiki/ss13/engineering-items/engineering-items.html">🧰Инженерный вещи🧰</button>
+                <button class="wiki-button" data-path="Wiki/ss13/rnd/rnd.html">🔍Технологи🔍</button>
             </div>
         `;
     });
 
     article2Button.addEventListener('click', function() {
+        content.innerHTML =  ` 
+        <h2 class="sena-s"> Все что тут есть</h2>
+            <div class="article-navigation">
+                <button class="wiki-button" data-path="Game/sapper/sapper.html">Сапёр</button>
+                <button class="wiki-button" data-path="Wiki/topicB.html">Тема B</button>
+            </div>
+        `;
+    });
+
+    article3Button.addEventListener('click', function() {
         content.innerHTML =  ` 
         <h2 class="sena-s">🕹️ ИГРЫ 🎮</h2>
         <p class="sena-s">Игры которые вы сможете пойграть.</p>

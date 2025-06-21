@@ -1,0 +1,344 @@
+
+/* Стили для сетки реагентов */
+.reagent-grid {
+    display: grid;
+    grid-template-columns: repeat(4, auto); 
+    gap: 10px; 
+    width: fit-content; 
+}
+
+.reagent-button {
+    background-color: #007bff; 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    white-space: nowrap; 
+}
+
+.reagent-button:hover {
+    background-color: #0558b1; 
+}
+
+.reagent-content-wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 300px;
+    margin-top: 10px;
+    align-items: start;
+    justify-items: center;
+}
+
+.reagent-gif-container {
+display: flex;
+    padding: 5px;
+    border: 1px solid #555;
+    background-color: #333; 
+}
+
+.reagent-elements-container { 
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end; 
+}
+
+/*            ICON            */
+.icon-bag {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/bag.png');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+.icon-dispenser-working {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/dispenser_working.gif');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+.icon-mixer {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/mixer.png');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+.icon-chemmaster {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/chemmaster.gif');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+.icon-portable_chemical_mixer {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/portable_chemical_mixer.png');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+.icon-portable_chemical_mixer2 {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/portable_chemical_mixer2.png');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+.icon-portable_chemical_mixer3 {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/portable_chemical_mixer3.png');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+
+/*            totorial            */
+.icon-recording_example {
+    display: block; 
+    background-image: url('image/totorial/recording_example.gif'); 
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center center;
+    width: 530px; 
+    height: 516px;
+    max-width: 100%; 
+    box-sizing: border-box; 
+}
+.icon-Reaction_chamber_level_1 {
+    display: block; 
+    background-image: url('image/totorial/Reaction_chamber_level_1.gif'); 
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center center;
+    width: 530px; 
+    height: 516px;
+    max-width: 100%; 
+    box-sizing: border-box; 
+}
+.icon-Reaction_chamber_level_4 {
+    display: block; 
+    background-image: url('image/totorial/Reaction_chamber_level_4.gif'); 
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center center;
+    width: 530px; 
+    height: 516px;
+    max-width: 100%; 
+    box-sizing: border-box; 
+}
+/*           dark-mode           */
+.dark-mode .reagent-button {
+    background-color: #333;
+    color: #f4f4f4;
+}
+.dark-mode .reagent-button:hover {
+    background-color: #555;
+}
+.dark-mode .table-cell {
+    border-bottom: 1px solid #555;
+    border-right: 1px solid #555; 
+}
+        /*             Вкладки             */
+/*               Chemistry Dispensers               */
+.dark-mode .collapsible-button {
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.collapsible-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+.collapsible-content {
+    display: block; 
+    max-height: 900px; 
+    overflow: hidden;
+    transition: max-height 1.0s ease-out;
+}
+/* Скрываем контент */
+.collapsible-content.collapsed {
+    max-height: 0; 
+}
+
+.dark-mode .collapsible-button-1 {
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.collapsible-button-1 {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+.collapsible-content-1 {
+    display: block; 
+    max-height: 2000px; 
+    overflow: hidden;
+    transition: max-height 1.0s ease-out;
+}
+/* Скрываем контент */
+.collapsible-content-1.collapsed {
+    max-height: 0; 
+}
+
+.dark-mode .collapsible-button-2 {
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.collapsible-button-2 {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+.collapsible-content-2 {
+    display: block; 
+    max-height: 300px; 
+    overflow: hidden;
+    transition: max-height 1.0s ease-out;
+}
+/* Скрываем контент */
+.collapsible-content-2.collapsed {
+    max-height: 0; 
+}
+
+.dark-mode .collapsible-button-3 {
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.collapsible-button-3 {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+.collapsible-content-3 {
+    display: block; 
+    max-height: 300px; 
+    overflow: hidden;
+    transition: max-height 1.0s ease-out;
+}
+/* Скрываем контент */
+.collapsible-content-3.collapsed {
+    max-height: 0; 
+}
+
+
+/*              Другие вкладки              */
+.dark-mode .collapsible-button-reagent {
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.collapsible-button-reagent {
+    width: 100%;
+    padding: 5px;
+    justify-content: center;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+}
+.collapsible-content-reagent {
+    display: block; 
+    max-height: 600px; 
+    overflow: hidden;
+    transition: max-height 1.0s ease-out;
+    text-align: left; 
+    background-color: #222; 
+}
+/* Скрываем контент */
+.collapsible-content-reagent.collapsed {
+    max-height: 0; 
+}
+
+
+
+/* ХЛАМ */
+/*
+</span>Алюминий</button>
+</span>Бром</button>
+</span>Углерод</button>
+</span>Хлор</button>
+</span>Медь</button>
+</span>Этанол</button>
+</span>Фтор</button>
+</span>Водород</button>
+</span>Йод</button>
+</span>Железо</button>
+</span>Литий</button>
+</span>Ртуть</button>
+</span>Азот</button>
+</span>Кислород</button>
+</span>Фосфор</button>
+</span>Калий</button>
+</span>Радий</button>
+</span>Кремний</button>
+</span>Серебро</button>
+</span>Натрий</button>
+</span>Стабильная плазма</button>
+</span>Сахар</button>
+</span>Сера</button>
+</span>Серная кислота</button>
+</span>Вода</button>
+</span>Сварочное топливо</button>
+*/

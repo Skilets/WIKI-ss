@@ -1,0 +1,242 @@
+
+        /*             ICON             */
+
+.icon-inducer-1 {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/inducer-1.png');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+.icon-inducer-2 {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/inducer-2.png');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+.icon-inducer-3 {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/inducer-3.png');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+
+
+.icon-crowbar {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/crowbar.png');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+
+.icon-screwdriver {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/screwdriver.png');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+
+.icon-wirecutters {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/wirecutters.png');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+
+.icon-wrench {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/wrench.png');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+
+.icon-multitool {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/multitool.gif');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+.icon-multitool-yellow {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/multitool_yellow.gif');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+.icon-multitool-red {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/multitool_red.gif');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+
+.icon-welding {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/welding.png');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+.icon-indwelder {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/indwelder.png');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+.icon-upindwelder {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/upindwelder.png');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+.icon-exwelder {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/exwelder.png');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+
+.icon-cell-1 {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/cell-1.png');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+.icon-cell-2 {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/cell-2.png');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+.icon-cell-3 {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/cell-3.png');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+.icon-cell-3 {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/cell-4.png');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+.icon-cell-4 {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/cell-5.png');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+.icon-cell-5 {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/cell-6.png');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+.icon-cell-7 {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/cell-7.png');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}

@@ -70,7 +70,7 @@ nav button {
 }
 
 nav button:hover {
-    background-color: #0056b3;
+    background-color: #055ebd;
 }
 
 .dark-mode nav button {
@@ -171,6 +171,17 @@ footer {
     text-align: center;
 }
 
+
+.icon-element { 
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('images/Xenobiology/element-16.png'); 
+    background-repeat: no-repeat;
+    width: 16px; 
+    height: 16px; 
+    background-position: 0 0; 
+    margin-right: 5px;
+}
 
 /* Стили для кнопок серверов (внутри article1Content) */
                 .server-buttons-container {
