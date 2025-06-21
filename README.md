@@ -1,1 +1,1 @@
-Это вики TG Но немного измененая. И приятная
+It's wiki TG but slightly different in appearance. 
