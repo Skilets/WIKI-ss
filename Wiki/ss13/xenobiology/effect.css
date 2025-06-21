@@ -1,0 +1,299 @@
+.blue {
+    background: linear-gradient(90deg, #172038, #3c5e8b, #4f8fba, #253a5e, #3c5e8b);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: blue 3s linear infinite;
+}
+@keyframes blue {
+    from {background-position: 0% center}         
+    to {background-position: 200% center}
+}
+
+.red {
+    background: linear-gradient(90deg, #752438, #a53030, #cf573c, #a53030, #411d31);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: red 3s linear infinite;
+}
+@keyframes red {
+    from {background-position: 0% center}         
+    to {background-position: 200% center}
+}
+
+.green {
+    background: linear-gradient(90deg,  #00AB00, #00CF00, #00BC00, #008000, #008D00);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: green 3s linear infinite;
+}
+@keyframes green {
+    from {background-position: 0% center}         
+    to {background-position: 200% center}
+}
+
+.plasma {
+    background: linear-gradient(90deg, #a23e8c, #df84a5, #c65197, #a23e8c, #7a367b);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: plasma 3s linear infinite;
+}
+@keyframes plasma {
+    from {background-position: 0% center}         
+    to {background-position: 200% center}
+}
+
+.bluespace {
+    background: linear-gradient(90deg, #82bcd1, #a0bed3, #82bcd1, #a0bed3, #4ba4b6);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: bluespace 1.5s linear infinite;
+}
+@keyframes bluespace {
+    from {background-position: 0% center}         
+    to {background-position: 200% center}
+}
+
+.rainbow {
+    background: linear-gradient(90deg,  #fb6212, #ff2404, #d1298e, #7421b1, #3b48ba, #016fc4, #01c2af, #00b500, #7fd100, #feef00, #fac713, #f79f23);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 3s linear infinite;
+}
+@keyframes rainbow {
+    from {background-position: 0% center}         
+    to {background-position: 200% center}
+}
+
+/*-------------Виды слаймов-------------*/
+.grey-slaim {
+    background: linear-gradient(90deg, #8790a7, #6c758c, #8790a7, #79839a, #959db4);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: grey-slaim 1.5s linear infinite;
+}
+@keyframes grey-slaim {
+    from {background-position: 0% center}         
+    to {background-position: 200% center}
+}
+
+.orange-slaim {
+    background: linear-gradient(90deg, #602c2c, #884b2b, #602c2c, #884b2b, #be772b);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: orange-slaim 1.5s linear infinite;
+}
+@keyframes orange-slaim {
+    from {background-position: 0% center}         
+    to {background-position: 200% center}
+}
+
+.purple-slaim {
+    background: linear-gradient(90deg, #a23e8c, #c65197, #7a367b, #df84a5, #c65197);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: purple-slaim 1.5s linear infinite;
+}
+@keyframes purple-slaim {
+    from {background-position: 0% center}         
+    to {background-position: 200% center}
+}
+
+.blue-slaim {
+    background: linear-gradient(90deg, #73bed3, #3c5e8b, #4f8fba, #a4dddb, #73bed3);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: blue-slaim 1.5s linear infinite;
+}
+@keyframes blue-slaim {
+    from {background-position: 0% center}         
+    to {background-position: 200% center}
+}
+
+.metal-slaim {
+    background: linear-gradient(90deg, #656f84, #ccd1ed, #a9b1e6, #343c44, #a9b1e6);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: metal-slaim 1.5s linear infinite;
+}
+@keyframes metal-slaim {
+    from {background-position: 0% center}         
+    to {background-position: 200% center}
+}
+
+.yellow-slaim {
+    background: linear-gradient(90deg, #be772b, #de9e41, #e8c170, #be772b, #884b2b);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: yellow-slaim 1.5s linear infinite;
+}
+@keyframes yellow-slaim {
+    from {background-position: 0% center}         
+    to {background-position: 200% center}
+}
+
+.dark-purple-slaim {
+    background: linear-gradient(90deg, #a23e8c, #402751, #7a367b, #1e1d39, #7a367b);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: dark-purple-slaim 1.5s linear infinite;
+}
+@keyframes dark-purple-slaim {
+    from {background-position: 0% center}         
+    to {background-position: 200% center}
+}
+
+.dark-blue-slaim {
+    background: linear-gradient(90deg, #253a5e, #4f8fba, #3c5e8b, #172038, #3c5e8b);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: dark-blue-slaim 1.5s linear infinite;
+}
+@keyframes dark-blue-slaim {
+    from {background-position: 0% center}         
+    to {background-position: 200% center}
+}
+
+.silver-slaim {
+    background: linear-gradient(90deg, #c7ced7, #9aa6b7, #52587a, #7f88a1, #9aa6b7);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: silver-slaim 1.5s linear infinite;
+}
+@keyframes silver-slaim {
+    from {background-position: 0% center}         
+    to {background-position: 200% center}
+}
+
+.silver-slaim {
+    background: linear-gradient(90deg, #c7ced7, #9aa6b7, #52587a, #7f88a1, #9aa6b7);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: silver-slaim 1.5s linear infinite;
+}
+@keyframes silver-slaim {
+    from {background-position: 0% center}         
+    to {background-position: 200% center}
+}
+
+.bluespace-slaim {
+    background: linear-gradient(90deg, #82bcd1, #a0bed3, #82bcd1, #a0bed3, #4ba4b6);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: bluespace-slaim 1.5s linear infinite;
+}
+@keyframes bluespace-slaim {
+    from {background-position: 0% center}         
+    to {background-position: 200% center}
+}
+
+.sepia-slaim {
+    background: linear-gradient(90deg, #564d46, #a8926b, #ccbf9d, #89795e, #a8926b);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: sepia-slaim 1.5s linear infinite;
+}
+@keyframes sepia-slaim {
+    from {background-position: 0% center}         
+    to {background-position: 200% center}
+}
+
+.cerulean-slaim {
+    background: linear-gradient(90deg, #2c58aa, #6288d1, #426ab7, #2c58aa, #193761);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: cerulean-slaim 1.5s linear infinite;
+}
+@keyframes cerulean-slaim {
+    from {background-position: 0% center}         
+    to {background-position: 200% center}
+}
+
+.pyrite-slaim {
+    background: linear-gradient(90deg, #debd42, #deb037, #de9623, #deb037, #de9623);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: pyrite-slaim 1.5s linear infinite;
+}
+@keyframes pyrite-slaim {
+    from {background-position: 0% center}         
+    to {background-position: 200% center}
+}
+
+.red-slaim {
+    background: linear-gradient(90deg, #a53030, #752438, #cf573c, #a53030, #cf573c);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: red-slaim 1.5s linear infinite;
+}
+@keyframes red-slaim {
+    from {background-position: 0% center}         
+    to {background-position: 200% center}
+}
+
+.green-slaim {
+    background: linear-gradient(90deg,  #1f7938, #3e9f3b, #76bd45, #1f7938, #245e3c);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: green-slaim 3s linear infinite;
+}
+@keyframes green-slaim {
+    from {background-position: 0% center}         
+    to {background-position: 200% center}
+}
+
+.pink-slaim {
+    background: linear-gradient(90deg,  #1f7938, #3e9f3b, #76bd45, #1f7938, #245e3c);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: pink-slaim 3s linear infinite;
+}
+@keyframes pink-slaim {
+    from {background-position: 0% center}         
+    to {background-position: 200% center}
+}

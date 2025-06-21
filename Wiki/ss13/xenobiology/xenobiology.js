@@ -26,12 +26,9 @@ function initializeXenobiologyPage() {
         const content = document.querySelector(item.content);
 
         if (button && content) {
-            // Убеждаемся, что начальное состояние соответствует тексту кнопки
-            if (content.classList.contains('collapsed')) {
-                button.innerHTML = item.textCollapsed; 
-            } else {
-                button.innerHTML = item.textExpanded; 
-            }
+            // При инициализации страницы, убеждаемся, что контент свернут
+            content.classList.add('collapsed'); 
+            button.innerHTML = item.textCollapsed; // Устанавливаем текст кнопки для закрытого состояния
 
             button.addEventListener('click', () => {
                 content.classList.toggle('collapsed');

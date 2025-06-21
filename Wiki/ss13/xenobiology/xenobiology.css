@@ -20,6 +20,16 @@ h2 {
     background-color: #dfdfdf;
 }
 
+.table-cell {
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    border-right: 1px solid #2e2e2eab; 
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column;
+}
+
 .table-row {
     display: flex;
     border-bottom: 1px solid #2e2e2eab;
@@ -50,14 +60,6 @@ h2 {
     border-right: none; 
 }
 
-.table-cell {
-    padding: 10px;
-    flex: 1;
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-    border-right: 1px solid #2e2e2eab; 
-}
 
 /* Стили Изображение */
 .icon-button {
@@ -72,15 +74,26 @@ h2 {
 }
 
 /*-----------------Что-то-----------------*/
-.icon-slaim-all {
-    display: inline-block;
+.icon-slaim-list {
+    display: inline-block; 
     background-image: url('image/slimes-all.gif');
-    background-repeat: no-repeat;
-    margin-left: 27% ;
-    width: 704px;   /* Размер иконки */
+    width: 704px; 
     height: 704px;
-    background-image: center;
-    background-position: 5px 5px;
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.icon-slaim-list-container {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+@media (max-width: 768px) {
+    .icon-slaim-list {
+        width: 440px; 
+        height: 440px;
+    }
 }
 /*-----------------Все-слаймы-----------------*/
 .icon-slaim-grey {
@@ -289,6 +302,15 @@ h2 {
     height: 128px;
     background-position: 0 0;
 }
+.icon-slaim-all {
+    display: inline-block;
+    background-image: url('image/Xenobiology/64/all.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    width: 128px;
+    height: 128px;
+    background-position: 0 0;
+}
 /*--------------------------------------------*/
 .reproductive {
     display: inline-block;
@@ -339,7 +361,7 @@ h2 {
     height: 32px;
     background-position: 0 0;
 }
-/*-------------НАдо доделать------------------*/
+
 .charged {
     display: inline-block;
     background-image: url('image/slimecrossing/charged.gif');
@@ -460,81 +482,6 @@ h2 {
     border: 1px solid #555;
     color: #f4f4f4;
 }
-
-/*          Света           */
-.blue {
-    background: linear-gradient(90deg, #253a5e, #3c5e8b, #4f8fba, #3c5e8b, #172038);
-    background-size: 200% auto;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: blue 3s linear infinite;
-}
-@keyframes blue {
-    from {background-position: 0% center}         
-    to {background-position: 200% center}
-}
-.red {
-    background: linear-gradient(90deg, #752438, #a53030, #cf573c, #a53030, #411d31);
-    background-size: 200% auto;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: red 3s linear infinite;
-}
-@keyframes red {
-    from {background-position: 0% center}         
-    to {background-position: 200% center}
-}
-.plasma {
-    background: linear-gradient(90deg, #a23e8c, #df84a5, #c65197, #a23e8c, #7a367b);
-    background-size: 200% auto;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: plasma 3s linear infinite;
-}
-@keyframes plasma {
-    from {background-position: 0% center}         
-    to {background-position: 200% center}
-}
-.bluespace {
-    background: linear-gradient(90deg, #82bcd1, #a0bed3, #82bcd1, #a0bed3, #4ba4b6);
-    background-size: 150% auto;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: bluespace 1.5s linear infinite;
-}
-@keyframes bluespace {
-    from {background-position: 0% center}         
-    to {background-position: 200% center}
-}
-.rainbow {
-    background: linear-gradient(90deg,  #fb6212, #ff2404, #d1298e, #7421b1, #3b48ba, #016fc4, #01c2af, #00b500, #7fd100, #feef00, #fac713, #f79f23);
-    background-size: 200% auto;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: rainbow 3s linear infinite;
-}
-@keyframes rainbow {
-    from {background-position: 0% center}         
-    to {background-position: 200% center}
-}
-.green {
-    background: linear-gradient(90deg,  #00AB00, #00CF00, #00BC00, #008000, #008D00);
-    background-size: 200% auto;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: green 3s linear infinite;
-}
-@keyframes green {
-    from {background-position: 0% center}         
-    to {background-position: 200% center}
-}
-
 /*--------------------------*/
 
 
@@ -890,5 +837,201 @@ h2 {
 }
 /* Скрываем контент */
 .collapsible-content-9.collapsed {
+    max-height: 0; 
+}
+/*               6               */
+.dark-mode .collapsible-button-10 {
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.dark-mode .table-cell {
+    border-bottom: 1px solid #555;
+    border-right: 1px solid #555; 
+}
+.collapsible-button-10 {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+.collapsible-content-10 {
+    display: block; 
+    max-height: 3400px; 
+    overflow: hidden;
+    transition: max-height 1.5s ease-out;
+}
+/* Скрываем контент */
+.collapsible-content-10.collapsed {
+    max-height: 0; 
+}
+/*               7               */
+.dark-mode .collapsible-button-11 {
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.dark-mode .table-cell {
+    border-bottom: 1px solid #555;
+    border-right: 1px solid #555; 
+}
+.collapsible-button-11 {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+.collapsible-content-11 {
+    display: block; 
+    max-height: 800px; 
+    overflow: hidden;
+    transition: max-height 1.5s ease-out;
+}
+/* Скрываем контент */
+.collapsible-content-11.collapsed {
+    max-height: 0; 
+}
+/*               8               */
+.dark-mode .collapsible-button-12 {
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.dark-mode .table-cell {
+    border-bottom: 1px solid #555;
+    border-right: 1px solid #555; 
+}
+.collapsible-button-12 {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+.collapsible-content-12 {
+    display: block; 
+    max-height: 3400px; 
+    overflow: hidden;
+    transition: max-height 1.5s ease-out;
+}
+/* Скрываем контент */
+.collapsible-content-12.collapsed {
+    max-height: 0; 
+}
+/*               9               */
+.dark-mode .collapsible-button-13 {
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.dark-mode .table-cell {
+    border-bottom: 1px solid #555;
+    border-right: 1px solid #555; 
+}
+.collapsible-button-13 {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+.collapsible-content-13 {
+    display: block; 
+    max-height: 3400px; 
+    overflow: hidden;
+    transition: max-height 1.5s ease-out;
+}
+/* Скрываем контент */
+.collapsible-content-13.collapsed {
+    max-height: 0; 
+}/*              10               */
+.dark-mode .collapsible-button-14 {
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.dark-mode .table-cell {
+    border-bottom: 1px solid #555;
+    border-right: 1px solid #555; 
+}
+.collapsible-button-14 {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+.collapsible-content-14 {
+    display: block; 
+    max-height: 400px; 
+    overflow: hidden;
+    transition: max-height 1.5s ease-out;
+}
+/* Скрываем контент */
+.collapsible-content-14.collapsed {
+    max-height: 0; 
+}/*              11               */
+.dark-mode .collapsible-button-15 {
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.dark-mode .table-cell {
+    border-bottom: 1px solid #555;
+    border-right: 1px solid #555; 
+}
+.collapsible-button-15 {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+.collapsible-content-15 {
+    display: block; 
+    max-height: 400px; 
+    overflow: hidden;
+    transition: max-height 1.5s ease-out;
+}
+/* Скрываем контент */
+.collapsible-content-15.collapsed {
     max-height: 0; 
 }
