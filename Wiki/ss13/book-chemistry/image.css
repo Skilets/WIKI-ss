@@ -1,0 +1,121 @@
+
+/*            ICON            */
+.icon-bag {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/bag.png');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+
+.icon-dispenser-working {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/dispenser-working.gif');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+
+.icon-mixer {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/mixer.png');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+
+.icon-chemmaster {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/chemmaster.gif');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+
+.icon-portable-chemical-mixer-1 {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/portable-chemical-mixer1.png');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+
+.icon-portable-chemical-mixer-2 {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/portable-chemical-mixer2.png');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+
+.icon-portable-chemical-mixer-3 {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/portable-chemical-mixer3.png');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+
+.icon-hplc {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/hplc.gif');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+
+.icon-juicer {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/juicer.png');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+
+.icon-smoke-machines {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/smoke.gif');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}

@@ -286,7 +286,20 @@
 }
 
 .pink-slaim {
-    background: linear-gradient(90deg,  #1f7938, #3e9f3b, #76bd45, #1f7938, #245e3c);
+    background: linear-gradient(90deg,  #cc8d87, #ce7276, #d39f93, #cc8d87, #dbb29f);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: pink-slaim 3s linear infinite;
+}
+@keyframes pink-slaim {
+    from {background-position: 0% center}         
+    to {background-position: 200% center}
+}
+
+.gold-slaim {
+    background: linear-gradient(90deg,  #7f5141, #bd8b47, #7f5141, #a96f49, #6a433e);
     background-size: 200% auto;
     background-clip: text;
     -webkit-background-clip: text;

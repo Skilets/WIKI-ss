@@ -29,7 +29,18 @@
 .reagent-content-wrapper {
     display: grid;
     grid-template-columns: auto 1fr;
-    gap: 300px;
+    gap: 20px;
+    margin-left: 25px;
+    margin-top: 10px;
+    align-items: start;
+    justify-items: center;
+}
+
+.reagent-content-wrapper-1 {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 25px;
+    margin-left: 25px;
     margin-top: 10px;
     align-items: start;
     justify-items: center;
@@ -47,86 +58,6 @@ display: flex;
     flex-direction: column; 
     align-items: flex-end; 
 }
-
-/*            ICON            */
-.icon-bag {
-    display: inline-block;
-    vertical-align: middle;
-    background-image: url('image/bag.png');
-    background-repeat: no-repeat;
-    margin-left: 5px;
-    margin-bottom: 0px;
-    width: 32px;
-    height: 32px;
-    background-position: 0 0;
-}
-.icon-dispenser-working {
-    display: inline-block;
-    vertical-align: middle;
-    background-image: url('image/dispenser_working.gif');
-    background-repeat: no-repeat;
-    margin-left: 5px;
-    margin-bottom: 0px;
-    width: 32px;
-    height: 32px;
-    background-position: 0 0;
-}
-.icon-mixer {
-    display: inline-block;
-    vertical-align: middle;
-    background-image: url('image/mixer.png');
-    background-repeat: no-repeat;
-    margin-left: 5px;
-    margin-bottom: 0px;
-    width: 32px;
-    height: 32px;
-    background-position: 0 0;
-}
-.icon-chemmaster {
-    display: inline-block;
-    vertical-align: middle;
-    background-image: url('image/chemmaster.gif');
-    background-repeat: no-repeat;
-    margin-left: 5px;
-    margin-bottom: 0px;
-    width: 32px;
-    height: 32px;
-    background-position: 0 0;
-}
-.icon-portable_chemical_mixer {
-    display: inline-block;
-    vertical-align: middle;
-    background-image: url('image/portable_chemical_mixer.png');
-    background-repeat: no-repeat;
-    margin-left: 5px;
-    margin-bottom: 0px;
-    width: 32px;
-    height: 32px;
-    background-position: 0 0;
-}
-.icon-portable_chemical_mixer2 {
-    display: inline-block;
-    vertical-align: middle;
-    background-image: url('image/portable_chemical_mixer2.png');
-    background-repeat: no-repeat;
-    margin-left: 5px;
-    margin-bottom: 0px;
-    width: 32px;
-    height: 32px;
-    background-position: 0 0;
-}
-.icon-portable_chemical_mixer3 {
-    display: inline-block;
-    vertical-align: middle;
-    background-image: url('image/portable_chemical_mixer3.png');
-    background-repeat: no-repeat;
-    margin-left: 5px;
-    margin-bottom: 0px;
-    width: 32px;
-    height: 32px;
-    background-position: 0 0;
-}
-
 /*            totorial            */
 .icon-recording_example {
     display: block; 
@@ -153,6 +84,17 @@ display: flex;
 .icon-Reaction_chamber_level_4 {
     display: block; 
     background-image: url('image/totorial/Reaction_chamber_level_4.gif'); 
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center center;
+    width: 530px; 
+    height: 516px;
+    max-width: 100%; 
+    box-sizing: border-box; 
+}
+.icon-Mass_spec {
+    display: block; 
+    background-image: url('image/totorial/Mass_spec.png'); 
     background-repeat: no-repeat;
     background-size: contain; 
     background-position: center center;
@@ -192,6 +134,7 @@ display: flex;
 }
 .collapsible-content {
     display: block; 
+    margin-left: 25px;
     max-height: 900px; 
     overflow: hidden;
     transition: max-height 1.0s ease-out;
@@ -218,6 +161,7 @@ display: flex;
 }
 .collapsible-content-1 {
     display: block; 
+    margin-left: 25px;
     max-height: 2000px; 
     overflow: hidden;
     transition: max-height 1.0s ease-out;
@@ -244,6 +188,7 @@ display: flex;
 }
 .collapsible-content-2 {
     display: block; 
+    margin-left: 25px;
     max-height: 300px; 
     overflow: hidden;
     transition: max-height 1.0s ease-out;
@@ -270,6 +215,7 @@ display: flex;
 }
 .collapsible-content-3 {
     display: block; 
+    margin-left: 25px;
     max-height: 300px; 
     overflow: hidden;
     transition: max-height 1.0s ease-out;
@@ -279,14 +225,130 @@ display: flex;
     max-height: 0; 
 }
 
-
-/*              Другие вкладки              */
-.dark-mode .collapsible-button-reagent {
+.dark-mode .collapsible-button-4 {
     background-color: #222;
     color: #f4f4f4;
     box-shadow: 0 0 0px #ffffff1a;
 }
+.collapsible-button-4 {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+.collapsible-content-4 {
+    display: block; 
+    margin-left: 25px;
+    max-height: 900px; 
+    overflow: hidden;
+    transition: max-height 1.0s ease-out;
+}
+/* Скрываем контент */
+.collapsible-content-4.collapsed {
+    max-height: 0; 
+}
+
+.dark-mode .collapsible-button-5 {
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.collapsible-button-5 {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+.collapsible-content-5 {
+    display: block; 
+    margin-left: 25px;
+    max-height: 600px; 
+    overflow: hidden;
+    transition: max-height 1.0s ease-out;
+}
+/* Скрываем контент */
+.collapsible-content-5.collapsed {
+    max-height: 0; 
+}
+
+.dark-mode .collapsible-button-6 {
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.collapsible-button-6 {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+.collapsible-content-6 {
+    display: block; 
+    margin-left: 25px;
+    max-height: 600px; 
+    overflow: hidden;
+    transition: max-height 1.0s ease-out;
+}
+/* Скрываем контент */
+.collapsible-content-6.collapsed {
+    max-height: 0; 
+}
+
+
+/*              Другие вкладки              */
+.dark-mode .collapsible-button-reagent {
+    background-color: #ffffff4b;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.dark-mode .collapsible-content-reagent {
+    background-color: #ebebeb33;
+}
 .collapsible-button-reagent {
+    width: 100%;
+    padding: 5px;
+    justify-content: center;
+    border: none;
+    background-color: #d8d8d8;
+    border-top: 1px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+}
+.collapsible-content-reagent {
+    display: block; 
+    max-height: 600px; 
+    overflow: hidden;
+    border-radius: 10px;
+    transition: max-height 1.0s ease-out;
+    text-align: left;
+    background-color: #cacaca;
+}
+/* Скрываем контент */
+.collapsible-content-reagent.collapsed {
+    max-height: 0; 
+}
+
+.dark-mode .collapsible-button-сomponents {
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.collapsible-button-сomponents {
     width: 100%;
     padding: 5px;
     justify-content: center;
@@ -298,20 +360,17 @@ display: flex;
     text-align: center;
     margin-left: auto;
 }
-.collapsible-content-reagent {
+.collapsible-content-сomponents {
     display: block; 
-    max-height: 600px; 
+    max-height: 3000px; 
     overflow: hidden;
     transition: max-height 1.0s ease-out;
-    text-align: left; 
-    background-color: #222; 
+    text-align: left;
 }
 /* Скрываем контент */
-.collapsible-content-reagent.collapsed {
+.collapsible-content-сomponents.collapsed {
     max-height: 0; 
 }
-
-
 
 /* ХЛАМ */
 /*
@@ -342,3 +401,60 @@ display: flex;
 </span>Вода</button>
 </span>Сварочное топливо</button>
 */
+/* Стили для таблицы формул */
+.table-container {
+    overflow-x: auto; /* Добавляет горизонтальную прокрутку, если таблица шире контейнера */
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #555; /* Рамка вокруг всей таблицы */
+}
+
+.collapsible-content-сomponents table {
+    width: 100%;
+    border-collapse: collapse; /* Схлопываем границы ячеек */
+    color: #333; /* Цвет текста по умолчанию для светлой темы */
+    font-size: 14px;
+}
+
+.dark-mode .collapsible-content-сomponents table {
+    color: #f4f4f4; /* Цвет текста для темной темы */
+}
+
+.collapsible-content-сomponents th,
+.collapsible-content-сomponents td {
+    border: 1px solid #ccc; /* Границы ячеек */
+    padding: 8px;
+    text-align: left;
+    vertical-align: top; /* Выравнивание текста по верхнему краю */
+}
+
+.dark-mode .collapsible-content-сomponents th,
+.dark-mode .collapsible-content-сomponents td {
+    border: 1px solid #555; /* Границы ячеек для темной темы */
+}
+
+.collapsible-content-сomponents th {
+    background-color: #f2f2f2; /* Цвет фона заголовков */
+    font-weight: bold;
+}
+
+.dark-mode .collapsible-content-сomponents th {
+    background-color: #333; /* Цвет фона заголовков для темной темы */
+}
+
+.collapsible-content-сomponents tr:nth-child(even) {
+    background-color: #f9f9f9; /* Чередующийся цвет строк для лучшей читаемости */
+}
+
+.dark-mode .collapsible-content-сomponents tr:nth-child(even) {
+    background-color: #2a2a2a; /* Чередующийся цвет строк для темной темы */
+}
+
+.collapsible-content-сomponents tr:hover {
+    background-color: #ddd; /* Подсветка строки при наведении */
+}
+
+.dark-mode .collapsible-content-сomponents tr:hover {
+    background-color: #444; /* Подсветка строки при наведении для темной темы */
+}

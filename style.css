@@ -6,6 +6,15 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+a {
+    color: #044141; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+.dark-mode a {
+    color: #099696; 
+}
+
 .dark-mode {
     background-color: #333;
     color: #f4f4f4;
@@ -64,7 +73,7 @@ nav button {
     background-color: #007bff;
     color: white;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: background-color 0.3s ease;
     white-space: nowrap;
 }
@@ -169,6 +178,10 @@ footer {
 }
 .sena-s {
     text-align: center;
+}
+.sena-s-mini {
+    text-align: center;
+    display: grid;
 }
 
 
