@@ -11,7 +11,8 @@ function initializeBookChemistryPage() {
         { button: '.collapsible-button-6', content: '.collapsible-content-6', textCollapsed: '<span class="icon-smoke-machines"></span>Дымовая машина🔽', textExpanded: '<span class="icon-smoke-machines"></span>Дымовая машина🔼' },
         // Другие вкладки
         { button: '.collapsible-button-reagent', content: '.collapsible-content-reagent', textCollapsed: '<span class="icon-dispenser-working"></span>Реагенты🔽', textExpanded: '<span class="icon-dispenser-working"></span>Реагенты🔼' },
-        { button: '.collapsible-button-сomponents', content: '.collapsible-content-сomponents', textCollapsed: 'Список формул🔽', textExpanded: 'Список формул🔼' },
+        { button: '.collapsible-button-сomponents', content: '.collapsible-content-сomponents', textCollapsed: 'Список компонентов🔽', textExpanded: 'Список компонентов🔼' },
+        { button: '.collapsible-button-сomponents-agents', content: '.collapsible-content-сomponents-agents', textCollapsed: 'Список компонентов агентов🔽', textExpanded: 'Список компонентов агентов🔼' },
     ];
 
     collapsibleButtons.forEach(item => {

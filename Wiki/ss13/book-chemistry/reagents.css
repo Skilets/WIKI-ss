@@ -1,10 +1,9 @@
-
 .Ash-reagent{
     color: #515151;
 }
 
 .Oil-reagent{
-    color: white;
+    color: #2D2D2D;
 }
 
 .Acetone-reagent{
@@ -28,5 +27,46 @@
 }
 
 .Sodium-Chloride-reagent{
-    color: #0c0c0c;
+    color: #FFFFFF;
+}
+
+.Lye-reagent{
+    color: #FFFFD6;
+}
+
+.Hydrogen-Peroxide-reagent{
+    color: #AAAAAA77;
+}
+
+.Pentaerythritol-reagent{
+    color: #E66FFF;
+}
+
+.Acetaldehyde-reagent{
+    color: #EEEEEF;
+}
+
+.Acetone-Oxide-reagent{
+    color: #C8A5DC;
+}
+
+.Wittel-reagent{
+    color: #FFFFFF;
+}
+
+.Hyper-Plasmium-Oxide-reagent{
+    color: #470750;
+}
+
+.Exotic-Stabilizer-reagent{
+    color: #180000;
+}
+Агентов
+
+.Acidic-Buffer-reagent{
+    color: #fbc314;
+}
+
+.Basic-Buffer-reagent{
+    color: #3853a4;
 }

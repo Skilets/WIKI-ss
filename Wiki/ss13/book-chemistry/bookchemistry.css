@@ -350,7 +350,7 @@ display: flex;
 }
 .collapsible-button-сomponents {
     width: 100%;
-    padding: 5px;
+    padding: 10px;
     justify-content: center;
     border: none;
     background-color: #f4f4f4;
@@ -372,89 +372,140 @@ display: flex;
     max-height: 0; 
 }
 
-/* ХЛАМ */
-/*
-</span>Алюминий</button>
-</span>Бром</button>
-</span>Углерод</button>
-</span>Хлор</button>
-</span>Медь</button>
-</span>Этанол</button>
-</span>Фтор</button>
-</span>Водород</button>
-</span>Йод</button>
-</span>Железо</button>
-</span>Литий</button>
-</span>Ртуть</button>
-</span>Азот</button>
-</span>Кислород</button>
-</span>Фосфор</button>
-</span>Калий</button>
-</span>Радий</button>
-</span>Кремний</button>
-</span>Серебро</button>
-</span>Натрий</button>
-</span>Стабильная плазма</button>
-</span>Сахар</button>
-</span>Сера</button>
-</span>Серная кислота</button>
-</span>Вода</button>
-</span>Сварочное топливо</button>
-*/
-/* Стили для таблицы формул */
+
+.dark-mode .collapsible-button-сomponents-agents {
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.collapsible-button-сomponents-agents {
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+}
+.collapsible-content-сomponents-agents {
+    display: block; 
+    max-height: 3000px; 
+    overflow: hidden;
+    transition: max-height 1.0s ease-out;
+    text-align: left;
+}
+/* Скрываем контент */
+.collapsible-content-сomponents-agents.collapsed {
+    max-height: 0; 
+}
+
+
+
+/*           Другое            */
 .table-container {
-    overflow-x: auto; /* Добавляет горизонтальную прокрутку, если таблица шире контейнера */
+    overflow-x: auto; 
     margin-top: 10px;
     margin-bottom: 15px;
     border-radius: 10px;
-    border: 1px solid #555; /* Рамка вокруг всей таблицы */
+    border: 1px solid #555; 
 }
 
 .collapsible-content-сomponents table {
     width: 100%;
-    border-collapse: collapse; /* Схлопываем границы ячеек */
-    color: #333; /* Цвет текста по умолчанию для светлой темы */
+    border-collapse: collapse; 
+    color: #333; 
     font-size: 14px;
 }
 
 .dark-mode .collapsible-content-сomponents table {
-    color: #f4f4f4; /* Цвет текста для темной темы */
+    color: #f4f4f4; 
 }
 
 .collapsible-content-сomponents th,
 .collapsible-content-сomponents td {
-    border: 1px solid #ccc; /* Границы ячеек */
+    border: 1px solid #ccc;
     padding: 8px;
     text-align: left;
-    vertical-align: top; /* Выравнивание текста по верхнему краю */
+    vertical-align: top; 
 }
 
 .dark-mode .collapsible-content-сomponents th,
 .dark-mode .collapsible-content-сomponents td {
-    border: 1px solid #555; /* Границы ячеек для темной темы */
+    border: 1px solid #555; 
 }
 
 .collapsible-content-сomponents th {
-    background-color: #f2f2f2; /* Цвет фона заголовков */
+    background-color: #f2f2f2; 
     font-weight: bold;
 }
 
 .dark-mode .collapsible-content-сomponents th {
-    background-color: #333; /* Цвет фона заголовков для темной темы */
+    background-color: #333; 
 }
 
 .collapsible-content-сomponents tr:nth-child(even) {
-    background-color: #f9f9f9; /* Чередующийся цвет строк для лучшей читаемости */
+    background-color: #f9f9f9;
 }
 
 .dark-mode .collapsible-content-сomponents tr:nth-child(even) {
-    background-color: #2a2a2a; /* Чередующийся цвет строк для темной темы */
+    background-color: #2a2a2a; 
 }
 
 .collapsible-content-сomponents tr:hover {
-    background-color: #ddd; /* Подсветка строки при наведении */
+    background-color: #ddd; 
 }
 
 .dark-mode .collapsible-content-сomponents tr:hover {
-    background-color: #444; /* Подсветка строки при наведении для темной темы */
+    background-color: #444; 
+}
+.collapsible-content-сomponents-agents  table {
+    width: 100%;
+    border-collapse: collapse; 
+    color: #333; 
+    font-size: 14px;
+}
+
+.dark-mode .collapsible-content-сomponents-agents table {
+    color: #f4f4f4; 
+}
+
+.collapsible-content-сomponents-agents th,
+.collapsible-content-сomponents-agents td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top; 
+}
+
+.dark-mode .collapsible-content-сomponents-agents th,
+.dark-mode .collapsible-content-сomponents-agents td {
+    border: 1px solid #555; 
+}
+
+.collapsible-content-сomponents-agents th {
+    background-color: #f2f2f2; 
+    font-weight: bold;
+}
+
+.dark-mode .collapsible-content-сomponents-agents th {
+    background-color: #333; 
+}
+
+.collapsible-content-сomponents-agents tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.dark-mode .collapsible-content-сomponents-agents tr:nth-child(even) {
+    background-color: #2a2a2a; 
+}
+
+.collapsible-content-сomponents-agents tr:hover {
+    background-color: #ddd; 
+}
+
+.dark-mode .collapsible-content-сomponents-agents tr:hover {
+    background-color: #444; 
 }
