@@ -37,6 +37,19 @@
     to {background-position: 200% center}
 }
 
+.yellow {
+    background: linear-gradient(90deg, #be772b, #de9e41, #e8c170, #be772b, #884b2b);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: yellow 1.5s linear infinite;
+}
+@keyframes yellow {
+    from {background-position: 0% center}         
+    to {background-position: 200% center}
+}
+
 .plasma {
     background: linear-gradient(90deg, #a23e8c, #df84a5, #c65197, #a23e8c, #7a367b);
     background-size: 200% auto;

@@ -83,11 +83,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 if (url.includes('xenobiology.html')) {
                     targetScript = 'xenobiology.js';
-                    initFunctionName = 'initializeXenobiologyPage';
-                } else if (url.includes('bookchemistry.html')) {
+                    initFunctionName = 'initializeXenobiologyPage';}
+                else if (url.includes('bookchemistry.html')) {
                     targetScript = 'bookchemistry.js';
-                    initFunctionName = 'initializeBookChemistryPage';
-                } else if (url.includes('rnd.html')) {
+                    initFunctionName = 'initializeBookChemistryPage';}
+                else if (url.includes('hydroponics.html')) {
+                    targetScript = 'hydroponics.js';
+                    initFunctionName = 'initializeHydroponicsPage';}
+                else if (url.includes('rnd.html')) {
                     targetScript = 'rnd.js';
                 }
 
@@ -176,6 +179,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <button class="wiki-button" data-path="Wiki/ss13/book-chemistry/bookchemistry.html">⚗️Книга хими⚗️</button>
                 <button class="wiki-button" data-path="Wiki/ss13/engineering-items/engineering-items.html">🧰Инженерный вещи🧰</button>
                 <button class="wiki-button" data-path="Wiki/ss13/rnd/rnd.html">🔍Технологи🔍</button>
+                <button class="wiki-button" data-path="Wiki/ss13/hydroponics/hydroponics.html">🌳гидропоника🌳</button>
             </div>
         `;
     });

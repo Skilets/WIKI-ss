@@ -13,6 +13,7 @@ function initializeBookChemistryPage() {
         { button: '.collapsible-button-reagent', content: '.collapsible-content-reagent', textCollapsed: '<span class="icon-dispenser-working"></span>Реагенты🔽', textExpanded: '<span class="icon-dispenser-working"></span>Реагенты🔼' },
         { button: '.collapsible-button-сomponents', content: '.collapsible-content-сomponents', textCollapsed: 'Список компонентов🔽', textExpanded: 'Список компонентов🔼' },
         { button: '.collapsible-button-сomponents-agents', content: '.collapsible-content-сomponents-agents', textCollapsed: 'Список компонентов агентов🔽', textExpanded: 'Список компонентов агентов🔼' },
+        { button: '.collapsible-button-optional-catalysts', content: '.collapsible-content-optional-catalysts', textCollapsed: 'Доп. катализаторы для ВСЕХ лекарственных реакций🔽', textExpanded: 'Доп. катализаторы для ВСЕХ лекарственных реакций🔼' },
     ];
 
     collapsibleButtons.forEach(item => {

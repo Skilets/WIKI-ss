@@ -1,0 +1,59 @@
+
+/*              Вкладки             */
+/*               Обяз               */
+.dark-mode .collapsible-button-roll {
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.dark-mode .table-cell {
+    border-bottom: 1px solid #555;
+    border-right: 1px solid #555; 
+}
+.collapsible-button-roll {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+.collapsible-content-roll {
+    display: block; 
+    max-height: 1200px; 
+    overflow: hidden;
+    transition: max-height 1.0s ease-out;
+}
+/* Скрываем контент */
+.collapsible-content-roll.collapsed {
+    max-height: 0; 
+}
+
+/* ------------ */
+.dark-mode .collapsible-button-plant-growing {
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.collapsible-button-plant-growing {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+.collapsible-content-plant-growing {
+    display: block; 
+    max-height: 1200px; 
+    overflow: hidden;
+    transition: max-height 1.0s ease-out;
+}
+/* Скрываем контент */
+.collapsible-content-plant-growing.collapsed {
+    max-height: 0; 
+}

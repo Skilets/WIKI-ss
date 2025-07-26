@@ -403,6 +403,36 @@ display: flex;
 }
 
 
+.dark-mode .collapsible-button-optional-catalysts {
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.collapsible-button-optional-catalysts {
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+}
+.collapsible-content-optional-catalysts {
+    display: block; 
+    max-height: 3000px; 
+    overflow: hidden;
+    transition: max-height 1.0s ease-out;
+    text-align: left;
+}
+/* Скрываем контент */
+.collapsible-content-optional-catalysts.collapsed {
+    max-height: 0; 
+}
+
+
 
 /*           Другое            */
 .table-container {
@@ -461,6 +491,7 @@ display: flex;
 .dark-mode .collapsible-content-сomponents tr:hover {
     background-color: #444; 
 }
+/*          1          */
 .collapsible-content-сomponents-agents  table {
     width: 100%;
     border-collapse: collapse; 
@@ -507,5 +538,54 @@ display: flex;
 }
 
 .dark-mode .collapsible-content-сomponents-agents tr:hover {
+    background-color: #444; 
+}
+/*          2          */
+.collapsible-content-optional-catalysts  table {
+    width: 100%;
+    border-collapse: collapse; 
+    color: #333; 
+    font-size: 14px;
+}
+
+.dark-mode .collapsible-content-optional-catalysts table {
+    color: #f4f4f4; 
+}
+
+.collapsible-content-optional-catalysts th,
+.collapsible-content-optional-catalysts td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top; 
+}
+
+.dark-mode .collapsible-content-optional-catalysts th,
+.dark-mode .collapsible-content-optional-catalysts td {
+    border: 1px solid #555; 
+}
+
+.collapsible-content-optional-catalysts th {
+    background-color: #f2f2f2; 
+    font-weight: bold;
+}
+
+.dark-mode .collapsible-content-optional-catalysts th {
+    background-color: #333; 
+}
+
+.collapsible-content-optional-catalysts tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.dark-mode .collapsible-content-optional-catalysts tr:nth-child(even) {
+    background-color: #2a2a2a; 
+}
+
+.collapsible-content-optional-catalysts tr:hover {
+    background-color: #ddd; 
+}
+
+.dark-mode .collapsible-content-optional-catalysts tr:hover {
     background-color: #444; 
 }

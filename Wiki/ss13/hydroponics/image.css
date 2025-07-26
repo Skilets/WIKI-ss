@@ -1,0 +1,12 @@
+/*               icon               */
+.icon-sextractor {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('image/sextractor.gif');
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
