@@ -141,7 +141,13 @@ footer {
                         /* ... стиль кнопок вкладках ... */
 
 .article-navigation {
-    margin-top: 20px;
+    display: grid; 
+    grid-template-columns: repeat(5, 100px);
+    gap: 5px; 
+    justify-items: center; 
+    align-items: center; 
+    justify-content: center;
+    margin-top: 20px;     
     padding: 10px;
     border-top: 1px solid #eee;
 }
@@ -159,6 +165,29 @@ footer {
     cursor: pointer;
     border-radius: 3px;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.article-navigation .wiki-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    color: #333;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.article-navigation .wiki-button img {
+    max-width: 64px; 
+    max-height: 64px;
+    margin-bottom: 5px; 
 }
 
 .wiki-button:hover {
@@ -197,40 +226,40 @@ footer {
 }
 
 /* Стили для кнопок серверов (внутри article1Content) */
-                .server-buttons-container {
-                    display: inline-flex; /* Изменено на inline-flex */
-                    align-items: center; /* Выравниваем вертикально */
-                    gap: 10px;
-                    margin-left: 10px; /* Отступ слева от кнопок */
-                }
+.server-buttons-container {
+    display: inline-flex; /* Изменено на inline-flex */
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px; 
+}
 
-                .server-buttons-container button {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    padding: 5px;
-                    border: none;
-                    background-color: #0056b3;
-                    color: white;
-                    cursor: pointer;
-                    border-radius: 5px;
-                    transition: background-color 0.3s ease;
-                    width: 80px;
-                    height: 80px;
-                    box-sizing: border-box; /* Важно для правильного отображения */
-                }
+.server-buttons-container button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    border: none;
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 80px;
+    height: 80px;
+    box-sizing: border-box; 
+}
 
-                .server-buttons-container button:hover {
-                    background-color: #007bff;
-                }
+.server-buttons-container button:hover {
+    background-color: #007bff;
+}
 
-                .server-buttons-container img {
-                    margin-bottom: 3px;
-                    width: 48px;
-                    height: 48px;
-                }
+.server-buttons-container img {
+    margin-bottom: 3px;
+    width: 48px;
+    height: 48px;
+}
 
-                .server-buttons-container span {
-                    font-size: 0.7em;
-                    text-align: center;
-                }
+.server-buttons-container span {
+    font-size: 0.7em;
+    text-align: center;
+}
