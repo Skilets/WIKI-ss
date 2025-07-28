@@ -176,10 +176,10 @@ document.addEventListener('DOMContentLoaded', function() {
             </p>
             <div class="article-navigation">
                 <button class="wiki-button" data-path="Wiki/ss13/xenobiology/xenobiology.html"><img src="images/icon/xeno.gif"><span>ксенобиология</span></button>
-                <button class="wiki-button" data-path="Wiki/ss13/book-chemistry/bookchemistry.html">⚗️Книга хими⚗️</button>
+                <button class="wiki-button" data-path="Wiki/ss13/book-chemistry/bookchemistry.html"><img src="images/icon/book-chemistry.gif"><span>Книга хими</span></button>
                 <button class="wiki-button" data-path="Wiki/ss13/engineering-items/engineering-items.html"><img src="images/icon/toolbox2.png"><span>Инжинерные<br>инструменты</span></button>
                 <button class="wiki-button" data-path="Wiki/ss13/rnd/rnd.html"><img src="images/icon/rnd.gif"><span>Технологи</span></button>
-                <button class="wiki-button" data-path="Wiki/ss13/hydroponics/hydroponics.html">🌳гидропоника🌳</button>
+                <button class="wiki-button" data-path="Wiki/ss13/hydroponics/hydroponics.html"><img src="images/icon/hydroponics.png"><span>гидропоника</span></button>
             </div>
         `;
     });
