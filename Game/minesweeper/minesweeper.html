@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8" />
+	<title>Сапёр</title>
+	<link rel="stylesheet" href="minesweeper.css" />
+</head>
+<body>
+	<div class="mines">
+		<h1>Сапёр</h1>
+
+		<div class="center">
+			<div class="info">
+				<span>⏱️ Время: <span id="timer">0</span> сек</span>
+				<span>💣 Осталось мин: <span id="mines-left">0</span></span>
+			</div>
+			<div id="game"></div>
+		</div>
+
+		<div class="side right">
+				<label>Сложность:
+					<select id="difficulty">
+						<option value="easy">Легко</option>
+						<option value="medium">Средне</option>
+						<option value="hard">Сложно</option>
+					</select>
+				</label>
+				<button id="restart">🔁 Новая игра</button>
+				<div id="message"></div>
+		</div>
+
+		</div>
+	</div>
+
+	<script src="minesweeper.js"></script>
+</body>
+</html>
