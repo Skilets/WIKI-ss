@@ -1,72 +1,382 @@
-.Ash-reagent{
-    color: #515151;
-}
-
-.Oil-reagent{
-    color: #2D2D2D;
-}
-
-.Acetone-reagent{
-    color: #AF14B7;
-}
-
-.Diethylamine-reagent{
-    color: #604030;
-}
-
-.Phenol-reagent{
-    color: #E7EA91;
-}
-
-.Ammonia-reagent{
-    color: #404030;
-}
-
-.Saltpetre-reagent{
-    color: #60A584;
-}
-
-.Sodium-Chloride-reagent{
-    color: #FFFFFF;
-}
-
-.Lye-reagent{
-    color: #FFFFD6;
-}
-
-.Hydrogen-Peroxide-reagent{
-    color: #AAAAAA77;
-}
-
-.Pentaerythritol-reagent{
-    color: #E66FFF;
-}
-
-.Acetaldehyde-reagent{
+/* Цвета названий реагентов (отсортировано по алфавиту) */
+.acetaldehyde-reagent {
     color: #EEEEEF;
+    background-color: white;
 }
-
-.Acetone-Oxide-reagent{
+.acetone-oxide-reagent {
     color: #C8A5DC;
+    background-color: white;
 }
-
-.Wittel-reagent{
-    color: #FFFFFF;
+.acetone-reagent {
+    color: #AF14B7;
+    background-color: white;
 }
-
-.Hyper-Plasmium-Oxide-reagent{
-    color: #470750;
+.acidic-buffer-reagent {
+    color: #fbc314;
+    background-color: white;
 }
-
-.Exotic-Stabilizer-reagent{
+.aiuri-reagent {
+    color: #8C93FF;
+    background-color: white;
+}
+.ammonia-reagent {
+    color: #404030;
+    background-color: white;
+}
+.ammoniated-mercury-reagent {
+    color: #F3F1F0;
+    background-color: white;
+}
+.antihol-reagent {
+    color: #00B4C8;
+    background-color: white;
+}
+.ash-reagent {
+    color: #515151;
+    background-color: white;
+}
+.atropine-reagent {
+    color: #1D3535;
+    background-color: white;
+}
+.basic-buffer-reagent {
+    color: #3853a4;
+    background-color: white;
+}
+.calomel-reagent {
+    color: #C85319;
+    background-color: white;
+}
+.convermol-reagent {
+    color: #FF6464;
+    background-color: white;
+}
+.cryoxadone-reagent {
+    color: #0000C8;
+    background-color: white;
+}
+.diphenhydramine-reagent {
+    color: #64FFE6;
+    background-color: white;
+}
+.diethylamine-reagent {
+    color: #604030;
+    background-color: white;
+}
+.energized-jelly-reagent {
+    color: #CAFF43;
+    background-color: white;
+}
+.ephedrine-reagent {
+    color: #D2FFFA;
+    background-color: white;
+}
+.epinephrine-reagent {
+    color: #D2FFFA;
+    background-color: white;
+}
+.exotic-stabilizer-reagent {
     color: #180000;
+    background-color: white;
 }
-Агентов
+.granibitaluri-reagent {
+    color: #E0E0E0;
+    background-color: white;
+}
+.haloperidol-reagent {
+    color: #27870a;
+    background-color: white;
+}
+.hercuri-reagent {
+    color: #F7FFA5;
+    background-color: white;
+}
+.higadrite-reagent {
+    color: #F49797;
+    background-color: white;
+}
+.hydrogen-peroxide-reagent {
+    color: #AAAAAA77;
+    background-color: white;
+}
+.hyper-plasmium-oxide-reagent {
+    color: #470750;
+    background-color: white;
+}
+.inacusiate-reagent {
+    color: #606060;
+    background-color: white;
+}
+.insulin-reagent {
+    color: #FFFFF0;
+    background-color: white;
+}
+.leporazine-reagent {
+    color: #DB90C6;
+    background-color: white;
+}
+.lenturi-reagent {
+    color: #6171FF;
+    background-color: white;
+}
+.libital-reagent {
+    color: #ECEC8D;
+    background-color: white;
+}
+.lye-reagent {
+    color: #FFFFD6;
+    background-color: white;
+}
+.mannitol-reagent {
+    color: #A0A0A0;
+    background-color: white;
+}
+.miners-salve-reagent {
+    color: #6D6374;
+    background-color: white;
+}
+.morphine-reagent {
+    color: #A9FBFB;
+    background-color: white;
+}
+.mutadone-reagent {
+    color: #5096C8;
+    background-color: white;
+}
+.multiver-reagent {
+    color: #000000;
+    background-color: white;
+}
+.naloxone-reagent {
+    color: #f5f5dc;
+    background-color: white;
+}
+.neurine-reagent {
+    color: #C0C0C0;
+    background-color: white;
+}
+.oculine-reagent {
+    color: #404040;
+    background-color: white;
+}
+.oil-reagent {
+    color: #2D2D2D;
+    background-color: white;
+}
+.ondansetron-reagent {
+    color: #74D3FF;
+    background-color: white;
+}
+.oxandrolone-reagent {
+    color: #1E8BFF;
+    background-color: white;
+}
+.pentaerythritol-reagent {
+    color: #E66FFF;
+    background-color: white;
+}
+.pentetic-acid-reagent {
+    color: #E6FFF0;
+    background-color: white;
+}
+.penthrite-reagent {
+    color: #F5F5F5;
+    background-color: white;
+}
+.phenol-reagent {
+    color: #E7EA91;
+    background-color: white;
+}
+.potassium-iodide-reagent {
+    color: #BAA15D;
+    background-color: white;
+}
+.probital-reagent {
+    color: #FFFF6B;
+    background-color: white;
+}
+.psicodine-reagent {
+    color: #07E79E;
+    background-color: white;
+}
+.pulped-banana-peel-reagent {
+    color: #863333;
+    background-color: white;
+}
+.pyroxadone-reagent {
+    color: #f7832a;
+    background-color: white;
+}
+.regenerative-jelly-reagent {
+    color: #CC23FF;
+    background-color: white;
+}
+.rezadone-reagent {
+    color: #669900;
+    background-color: white;
+}
+.saline-glucose-solution-reagent {
+    color: #DCDCDC;
+    background-color: white;
+}
+.salbutamol-reagent {
+    color: #00FFFF;
+    background-color: white;
+}
+.salicylic-acid-reagent {
+    color: #D2D2D2;
+    background-color: white;
+}
+.saltpetre-reagent {
+    color: #60A584;
+    background-color: white;
+}
+.sanguirite-reagent {
+    color: #bb2424;
+    background-color: white;
+}
+.seiver-reagent {
+    color: #000000;
+    background-color: white;
+}
+.seraka-extract-reagent {
+    color: #bb2424;
+    background-color: white;
+}
+.sodium-chloride-reagent {
+    color: #FFFFFF;
+    background-color: white;
+}
+.strange-reagent-reagent {
+    color: #A0E85E;
+    background-color: white;
+}
+.synthflesh-reagent {
+    color: #FFEBEB;
+    background-color: white;
+}
+.synaptizine-reagent {
+    color: #FF00FF;
+    background-color: white;
+}
+.syriniver-reagent {
+    color: #8CDF24;
+    background-color: white;
+}
+.tirimol-reagent {
+    color: #FF6464;
+    background-color: white;
+}
+.wittel-reagent {
+    color: #FFFFFF;
+    background-color: white;
+}
 
-.Acidic-Buffer-reagent{
+/* pH цвета (от большего к меньшему, текстовый формат) */
+.ph-twelve-seven {
+    color: #5a51a2;
+}
+.ph-twelve-four {
+    color: #5a51a2;
+}
+.ph-twelve-two {
+    color: #669900;
+}
+.ph-twelve {
+    color: #1D3535;
+}
+.ph-eleven {
+    color: #0000C8;
+}
+.ph-ten-seven {
+    color: #1E8BFF;
+}
+.ph-ten-six {
+    color: #1E8BFF;
+}
+.ph-ten-four {
+    color: #3f93cf;
+}
+.ph-ten {
+    color: #3f93cf;
+}
+.ph-nine-two {
+    color: #0bb9b7;
+}
+.ph-eight-nine {
+    color: #23b36e;
+}
+.ph-eight-six {
+    color: #23b36e;
+}
+.ph-eight-two {
+    color: #23b36e;
+}
+.ph-eight {
+    color: #23b36e;
+}
+.ph-seven-two {
+    color: #3aa651;
+}
+.ph-seven {
+    color: #3aa651;
+}
+.ph-four-seven {
+    color: #f7ec1e;
+}
+.ph-four {
+    color: #f7ec1e;
+}
+.ph-two-one {
+    color: #D2D2D2;
+}
+.ph-two {
+    color: #00FFFF;
+}
+.ph-one-five {
+    color: #C85319;
+}
+.ph-one {
+    color: #E6FFF0;
+}
+.ph-five-six {
+    color: #b5d335;
+}
+.ph-five-five {
+    color: #b5d335;
+}
+.ph-three-seven {
     color: #fbc314;
 }
-
-.Basic-Buffer-reagent{
-    color: #3853a4;
+.ph-two {
+    color: #f26724;
 }
+
+/*
+pH: twelve-seven 5a51a2
+pH: twelve-four 5a51a2
+pH: twelve-two 669900
+pH: twelve   1D3535
+pH: eleven   0000C8
+pH: ten-seven 1E8BFF
+pH: ten-six 1E8BFF
+pH: ten-four 3f93cf
+pH: ten      3f93cf
+pH: nine-two  0bb9b7
+pH: eight-nine 23b36e
+pH: eight-six 23b36e
+pH: eight-two 23b36e 
+pH: eight    23b36e
+pH: seven-two 3aa651
+pH: seven    3aa651
+pH: four-seven f7ec1e
+pH: four     f7ec1e
+pH: two-one  D2D2D2
+pH: two      00FFFF
+pH: one-five C85319
+pH: one      E6FFF0
+pH: five-six b5d335
+pH: five-five b5d335
+pH: three-seven fbc314
+pH: two    f26724
+*/
