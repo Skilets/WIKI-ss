@@ -433,7 +433,6 @@ display: flex;
 }
 
 
-
 /*           Другое            */
 .table-container {
     overflow-x: auto; 
@@ -589,3 +588,1019 @@ display: flex;
 .dark-mode .collapsible-content-optional-catalysts tr:hover {
     background-color: #444; 
 }
+
+
+/*////////////////15h15m////////////////////////*/
+/*Нельзя как-то сделать один базовый шаблон?
+копипастить меняя лишь название -- кринж        */
+/*изначально это были две разные группы оформленные
+по аналогии с твоим группированием
+но две группы сильно мешают работе через автоматизацию
+так что я их склеил и надеюсь ты не укусишь меня за это
+мир мур мяу
+*/
+
+.dark-mode .collapsible-button-core-healing-medicines {/*1*/
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.collapsible-button-core-healing-medicines {/*2*/
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+}
+.collapsible-content-core-healing-medicines {/*3*/
+    display: block; 
+    max-height: 3000px; 
+    overflow: hidden;
+    transition: max-height 1.0s ease-out;
+    text-align: left;
+}
+
+.collapsible-content-core-healing-medicines.collapsed {/*4*/
+    max-height: 0; 
+}
+
+.collapsible-content-core-healing-medicines  table {/*5*/
+    width: 100%;
+    border-collapse: collapse; 
+    color: #333; 
+    font-size: 14px;
+}
+
+.dark-mode .collapsible-content-core-healing-medicines table {/*6*/
+    color: #f4f4f4; 
+}
+
+.collapsible-content-core-healing-medicines th,/*7*/
+.collapsible-content-core-healing-medicines td {/*8*/
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top; 
+}
+
+.dark-mode .collapsible-content-core-healing-medicines th,/*9*/
+.dark-mode .collapsible-content-core-healing-medicines td {/*10*/
+    border: 1px solid #555; 
+}
+
+.collapsible-content-core-healing-medicines th {/*11*/
+    background-color: #f2f2f2; 
+    font-weight: bold;
+}
+
+.dark-mode .collapsible-content-core-healing-medicines th {/*12*/
+    background-color: #333; 
+}
+
+.collapsible-content-core-healing-medicines tr:nth-child(even) {/*13*/
+    background-color: #f9f9f9;
+}
+
+.dark-mode .collapsible-content-core-healing-medicines tr:nth-child(even) {/*14*/
+    background-color: #2a2a2a; 
+}
+
+.collapsible-content-core-healing-medicines tr:hover {/*15*/
+    background-color: #ddd; 
+}
+
+.dark-mode .collapsible-content-core-healing-medicines tr:hover {/*16*/
+    background-color: #444; 
+}
+.dark-mode .collapsible-button-superior-healing-medicines {/*1*/
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.collapsible-button-superior-healing-medicines {/*2*/
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+}
+.collapsible-content-superior-healing-medicines {/*3*/
+    display: block; 
+    max-height: 3000px; 
+    overflow: hidden;
+    transition: max-height 1.0s ease-out;
+    text-align: left;
+}
+
+.collapsible-content-superior-healing-medicines.collapsed {/*4*/
+    max-height: 0; 
+}
+
+.collapsible-content-superior-healing-medicines  table {/*5*/
+    width: 100%;
+    border-collapse: collapse; 
+    color: #333; 
+    font-size: 14px;
+}
+
+.dark-mode .collapsible-content-superior-healing-medicines table {/*6*/
+    color: #f4f4f4; 
+}
+
+.collapsible-content-superior-healing-medicines th,/*7*/
+.collapsible-content-superior-healing-medicines td {/*8*/
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top; 
+}
+
+.dark-mode .collapsible-content-superior-healing-medicines th,/*9*/
+.dark-mode .collapsible-content-superior-healing-medicines td {/*10*/
+    border: 1px solid #555; 
+}
+
+.collapsible-content-superior-healing-medicines th {/*11*/
+    background-color: #f2f2f2; 
+    font-weight: bold;
+}
+
+.dark-mode .collapsible-content-superior-healing-medicines th {/*12*/
+    background-color: #333; 
+}
+
+.collapsible-content-superior-healing-medicines tr:nth-child(even) {/*13*/
+    background-color: #f9f9f9;
+}
+
+.dark-mode .collapsible-content-superior-healing-medicines tr:nth-child(even) {/*14*/
+    background-color: #2a2a2a; 
+}
+
+.collapsible-content-superior-healing-medicines tr:hover {/*15*/
+    background-color: #ddd; 
+}
+
+.dark-mode .collapsible-content-superior-healing-medicines tr:hover {/*16*/
+    background-color: #444; 
+}
+.dark-mode .collapsible-button-unique-healing-medicines {/*1*/
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.collapsible-button-unique-healing-medicines {/*2*/
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+}
+.collapsible-content-unique-healing-medicines {/*3*/
+    display: block; 
+    max-height: 3000px; 
+    overflow: hidden;
+    transition: max-height 1.0s ease-out;
+    text-align: left;
+}
+
+.collapsible-content-unique-healing-medicines.collapsed {/*4*/
+    max-height: 0; 
+}
+
+.collapsible-content-unique-healing-medicines  table {/*5*/
+    width: 100%;
+    border-collapse: collapse; 
+    color: #333; 
+    font-size: 14px;
+}
+
+.dark-mode .collapsible-content-unique-healing-medicines table {/*6*/
+    color: #f4f4f4; 
+}
+
+.collapsible-content-unique-healing-medicines th,/*7*/
+.collapsible-content-unique-healing-medicines td {/*8*/
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top; 
+}
+
+.dark-mode .collapsible-content-unique-healing-medicines th,/*9*/
+.dark-mode .collapsible-content-unique-healing-medicines td {/*10*/
+    border: 1px solid #555; 
+}
+
+.collapsible-content-unique-healing-medicines th {/*11*/
+    background-color: #f2f2f2; 
+    font-weight: bold;
+}
+
+.dark-mode .collapsible-content-unique-healing-medicines th {/*12*/
+    background-color: #333; 
+}
+
+.collapsible-content-unique-healing-medicines tr:nth-child(even) {/*13*/
+    background-color: #f9f9f9;
+}
+
+.dark-mode .collapsible-content-unique-healing-medicines tr:nth-child(even) {/*14*/
+    background-color: #2a2a2a; 
+}
+
+.collapsible-content-unique-healing-medicines tr:hover {/*15*/
+    background-color: #ddd; 
+}
+
+.dark-mode .collapsible-content-unique-healing-medicines tr:hover {/*16*/
+    background-color: #444; 
+}
+.dark-mode .collapsible-button-noncraftable-medicines {/*1*/
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.collapsible-button-noncraftable-medicines {/*2*/
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+}
+.collapsible-content-noncraftable-medicines {/*3*/
+    display: block; 
+    max-height: 3000px; 
+    overflow: hidden;
+    transition: max-height 1.0s ease-out;
+    text-align: left;
+}
+
+.collapsible-content-noncraftable-medicines.collapsed {/*4*/
+    max-height: 0; 
+}
+
+.collapsible-content-noncraftable-medicines  table {/*5*/
+    width: 100%;
+    border-collapse: collapse; 
+    color: #333; 
+    font-size: 14px;
+}
+
+.dark-mode .collapsible-content-noncraftable-medicines table {/*6*/
+    color: #f4f4f4; 
+}
+
+.collapsible-content-noncraftable-medicines th,/*7*/
+.collapsible-content-noncraftable-medicines td {/*8*/
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top; 
+}
+
+.dark-mode .collapsible-content-noncraftable-medicines th,/*9*/
+.dark-mode .collapsible-content-noncraftable-medicines td {/*10*/
+    border: 1px solid #555; 
+}
+
+.collapsible-content-noncraftable-medicines th {/*11*/
+    background-color: #f2f2f2; 
+    font-weight: bold;
+}
+
+.dark-mode .collapsible-content-noncraftable-medicines th {/*12*/
+    background-color: #333; 
+}
+
+.collapsible-content-noncraftable-medicines tr:nth-child(even) {/*13*/
+    background-color: #f9f9f9;
+}
+
+.dark-mode .collapsible-content-noncraftable-medicines tr:nth-child(even) {/*14*/
+    background-color: #2a2a2a; 
+}
+
+.collapsible-content-noncraftable-medicines tr:hover {/*15*/
+    background-color: #ddd; 
+}
+
+.dark-mode .collapsible-content-noncraftable-medicines tr:hover {/*16*/
+    background-color: #444; 
+}
+.dark-mode .collapsible-button-narcotics {/*1*/
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.collapsible-button-narcotics {/*2*/
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+}
+.collapsible-content-narcotics {/*3*/
+    display: block; 
+    max-height: 3000px; 
+    overflow: hidden;
+    transition: max-height 1.0s ease-out;
+    text-align: left;
+}
+
+.collapsible-content-narcotics.collapsed {/*4*/
+    max-height: 0; 
+}
+
+.collapsible-content-narcotics  table {/*5*/
+    width: 100%;
+    border-collapse: collapse; 
+    color: #333; 
+    font-size: 14px;
+}
+
+.dark-mode .collapsible-content-narcotics table {/*6*/
+    color: #f4f4f4; 
+}
+
+.collapsible-content-narcotics th,/*7*/
+.collapsible-content-narcotics td {/*8*/
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top; 
+}
+
+.dark-mode .collapsible-content-narcotics th,/*9*/
+.dark-mode .collapsible-content-narcotics td {/*10*/
+    border: 1px solid #555; 
+}
+
+.collapsible-content-narcotics th {/*11*/
+    background-color: #f2f2f2; 
+    font-weight: bold;
+}
+
+.dark-mode .collapsible-content-narcotics th {/*12*/
+    background-color: #333; 
+}
+
+.collapsible-content-narcotics tr:nth-child(even) {/*13*/
+    background-color: #f9f9f9;
+}
+
+.dark-mode .collapsible-content-narcotics tr:nth-child(even) {/*14*/
+    background-color: #2a2a2a; 
+}
+
+.collapsible-content-narcotics tr:hover {/*15*/
+    background-color: #ddd; 
+}
+
+.dark-mode .collapsible-content-narcotics tr:hover {/*16*/
+    background-color: #444; 
+}
+.dark-mode .collapsible-button-pyrotechnics {/*1*/
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.collapsible-button-pyrotechnics {/*2*/
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+}
+.collapsible-content-pyrotechnics {/*3*/
+    display: block; 
+    max-height: 3000px; 
+    overflow: hidden;
+    transition: max-height 1.0s ease-out;
+    text-align: left;
+}
+
+.collapsible-content-pyrotechnics.collapsed {/*4*/
+    max-height: 0; 
+}
+
+.collapsible-content-pyrotechnics  table {/*5*/
+    width: 100%;
+    border-collapse: collapse; 
+    color: #333; 
+    font-size: 14px;
+}
+
+.dark-mode .collapsible-content-pyrotechnics table {/*6*/
+    color: #f4f4f4; 
+}
+
+.collapsible-content-pyrotechnics th,/*7*/
+.collapsible-content-pyrotechnics td {/*8*/
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top; 
+}
+
+.dark-mode .collapsible-content-pyrotechnics th,/*9*/
+.dark-mode .collapsible-content-pyrotechnics td {/*10*/
+    border: 1px solid #555; 
+}
+
+.collapsible-content-pyrotechnics th {/*11*/
+    background-color: #f2f2f2; 
+    font-weight: bold;
+}
+
+.dark-mode .collapsible-content-pyrotechnics th {/*12*/
+    background-color: #333; 
+}
+
+.collapsible-content-pyrotechnics tr:nth-child(even) {/*13*/
+    background-color: #f9f9f9;
+}
+
+.dark-mode .collapsible-content-pyrotechnics tr:nth-child(even) {/*14*/
+    background-color: #2a2a2a; 
+}
+
+.collapsible-content-pyrotechnics tr:hover {/*15*/
+    background-color: #ddd; 
+}
+
+.dark-mode .collapsible-content-pyrotechnics tr:hover {/*16*/
+    background-color: #444; 
+}
+.dark-mode .collapsible-button-other-reagents {/*1*/
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.collapsible-button-other-reagents {/*2*/
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+}
+.collapsible-content-other-reagents {/*3*/
+    display: block; 
+    max-height: 3000px; 
+    overflow: hidden;
+    transition: max-height 1.0s ease-out;
+    text-align: left;
+}
+
+.collapsible-content-other-reagents.collapsed {/*4*/
+    max-height: 0; 
+}
+
+.collapsible-content-other-reagents  table {/*5*/
+    width: 100%;
+    border-collapse: collapse; 
+    color: #333; 
+    font-size: 14px;
+}
+
+.dark-mode .collapsible-content-other-reagents table {/*6*/
+    color: #f4f4f4; 
+}
+
+.collapsible-content-other-reagents th,/*7*/
+.collapsible-content-other-reagents td {/*8*/
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top; 
+}
+
+.dark-mode .collapsible-content-other-reagents th,/*9*/
+.dark-mode .collapsible-content-other-reagents td {/*10*/
+    border: 1px solid #555; 
+}
+
+.collapsible-content-other-reagents th {/*11*/
+    background-color: #f2f2f2; 
+    font-weight: bold;
+}
+
+.dark-mode .collapsible-content-other-reagents th {/*12*/
+    background-color: #333; 
+}
+
+.collapsible-content-other-reagents tr:nth-child(even) {/*13*/
+    background-color: #f9f9f9;
+}
+
+.dark-mode .collapsible-content-other-reagents tr:nth-child(even) {/*14*/
+    background-color: #2a2a2a; 
+}
+
+.collapsible-content-other-reagents tr:hover {/*15*/
+    background-color: #ddd; 
+}
+
+.dark-mode .collapsible-content-other-reagents tr:hover {/*16*/
+    background-color: #444; 
+}
+.dark-mode .collapsible-button-virology-recipes {/*1*/
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.collapsible-button-virology-recipes {/*2*/
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+}
+.collapsible-content-virology-recipes {/*3*/
+    display: block; 
+    max-height: 3000px; 
+    overflow: hidden;
+    transition: max-height 1.0s ease-out;
+    text-align: left;
+}
+
+.collapsible-content-virology-recipes.collapsed {/*4*/
+    max-height: 0; 
+}
+
+.collapsible-content-virology-recipes  table {/*5*/
+    width: 100%;
+    border-collapse: collapse; 
+    color: #333; 
+    font-size: 14px;
+}
+
+.dark-mode .collapsible-content-virology-recipes table {/*6*/
+    color: #f4f4f4; 
+}
+
+.collapsible-content-virology-recipes th,/*7*/
+.collapsible-content-virology-recipes td {/*8*/
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top; 
+}
+
+.dark-mode .collapsible-content-virology-recipes th,/*9*/
+.dark-mode .collapsible-content-virology-recipes td {/*10*/
+    border: 1px solid #555; 
+}
+
+.collapsible-content-virology-recipes th {/*11*/
+    background-color: #f2f2f2; 
+    font-weight: bold;
+}
+
+.dark-mode .collapsible-content-virology-recipes th {/*12*/
+    background-color: #333; 
+}
+
+.collapsible-content-virology-recipes tr:nth-child(even) {/*13*/
+    background-color: #f9f9f9;
+}
+
+.dark-mode .collapsible-content-virology-recipes tr:nth-child(even) {/*14*/
+    background-color: #2a2a2a; 
+}
+
+.collapsible-content-virology-recipes tr:hover {/*15*/
+    background-color: #ddd; 
+}
+
+.dark-mode .collapsible-content-virology-recipes tr:hover {/*16*/
+    background-color: #444; 
+}
+.dark-mode .collapsible-button-mutation-toxins {/*1*/
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.collapsible-button-mutation-toxins {/*2*/
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+}
+.collapsible-content-mutation-toxins {/*3*/
+    display: block; 
+    max-height: 3000px; 
+    overflow: hidden;
+    transition: max-height 1.0s ease-out;
+    text-align: left;
+}
+
+.collapsible-content-mutation-toxins.collapsed {/*4*/
+    max-height: 0; 
+}
+
+.collapsible-content-mutation-toxins  table {/*5*/
+    width: 100%;
+    border-collapse: collapse; 
+    color: #333; 
+    font-size: 14px;
+}
+
+.dark-mode .collapsible-content-mutation-toxins table {/*6*/
+    color: #f4f4f4; 
+}
+
+.collapsible-content-mutation-toxins th,/*7*/
+.collapsible-content-mutation-toxins td {/*8*/
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top; 
+}
+
+.dark-mode .collapsible-content-mutation-toxins th,/*9*/
+.dark-mode .collapsible-content-mutation-toxins td {/*10*/
+    border: 1px solid #555; 
+}
+
+.collapsible-content-mutation-toxins th {/*11*/
+    background-color: #f2f2f2; 
+    font-weight: bold;
+}
+
+.dark-mode .collapsible-content-mutation-toxins th {/*12*/
+    background-color: #333; 
+}
+
+.collapsible-content-mutation-toxins tr:nth-child(even) {/*13*/
+    background-color: #f9f9f9;
+}
+
+.dark-mode .collapsible-content-mutation-toxins tr:nth-child(even) {/*14*/
+    background-color: #2a2a2a; 
+}
+
+.collapsible-content-mutation-toxins tr:hover {/*15*/
+    background-color: #ddd; 
+}
+
+.dark-mode .collapsible-content-mutation-toxins tr:hover {/*16*/
+    background-color: #444; 
+}
+.dark-mode .collapsible-button-unique-chemicals {/*1*/
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.collapsible-button-unique-chemicals {/*2*/
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+}
+.collapsible-content-unique-chemicals {/*3*/
+    display: block; 
+    max-height: 3000px; 
+    overflow: hidden;
+    transition: max-height 1.0s ease-out;
+    text-align: left;
+}
+
+.collapsible-content-unique-chemicals.collapsed {/*4*/
+    max-height: 0; 
+}
+
+.collapsible-content-unique-chemicals  table {/*5*/
+    width: 100%;
+    border-collapse: collapse; 
+    color: #333; 
+    font-size: 14px;
+}
+
+.dark-mode .collapsible-content-unique-chemicals table {/*6*/
+    color: #f4f4f4; 
+}
+
+.collapsible-content-unique-chemicals th,/*7*/
+.collapsible-content-unique-chemicals td {/*8*/
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top; 
+}
+
+.dark-mode .collapsible-content-unique-chemicals th,/*9*/
+.dark-mode .collapsible-content-unique-chemicals td {/*10*/
+    border: 1px solid #555; 
+}
+
+.collapsible-content-unique-chemicals th {/*11*/
+    background-color: #f2f2f2; 
+    font-weight: bold;
+}
+
+.dark-mode .collapsible-content-unique-chemicals th {/*12*/
+    background-color: #333; 
+}
+
+.collapsible-content-unique-chemicals tr:nth-child(even) {/*13*/
+    background-color: #f9f9f9;
+}
+
+.dark-mode .collapsible-content-unique-chemicals tr:nth-child(even) {/*14*/
+    background-color: #2a2a2a; 
+}
+
+.collapsible-content-unique-chemicals tr:hover {/*15*/
+    background-color: #ddd; 
+}
+
+.dark-mode .collapsible-content-unique-chemicals tr:hover {/*16*/
+    background-color: #444; 
+}
+.dark-mode .collapsible-button-lavaland-chemicals {/*1*/
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.collapsible-button-lavaland-chemicals {/*2*/
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+}
+.collapsible-content-lavaland-chemicals {/*3*/
+    display: block; 
+    max-height: 3000px; 
+    overflow: hidden;
+    transition: max-height 1.0s ease-out;
+    text-align: left;
+}
+
+.collapsible-content-lavaland-chemicals.collapsed {/*4*/
+    max-height: 0; 
+}
+
+.collapsible-content-lavaland-chemicals  table {/*5*/
+    width: 100%;
+    border-collapse: collapse; 
+    color: #333; 
+    font-size: 14px;
+}
+
+.dark-mode .collapsible-content-lavaland-chemicals table {/*6*/
+    color: #f4f4f4; 
+}
+
+.collapsible-content-lavaland-chemicals th,/*7*/
+.collapsible-content-lavaland-chemicals td {/*8*/
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top; 
+}
+
+.dark-mode .collapsible-content-lavaland-chemicals th,/*9*/
+.dark-mode .collapsible-content-lavaland-chemicals td {/*10*/
+    border: 1px solid #555; 
+}
+
+.collapsible-content-lavaland-chemicals th {/*11*/
+    background-color: #f2f2f2; 
+    font-weight: bold;
+}
+
+.dark-mode .collapsible-content-lavaland-chemicals th {/*12*/
+    background-color: #333; 
+}
+
+.collapsible-content-lavaland-chemicals tr:nth-child(even) {/*13*/
+    background-color: #f9f9f9;
+}
+
+.dark-mode .collapsible-content-lavaland-chemicals tr:nth-child(even) {/*14*/
+    background-color: #2a2a2a; 
+}
+
+.collapsible-content-lavaland-chemicals tr:hover {/*15*/
+    background-color: #ddd; 
+}
+
+.dark-mode .collapsible-content-lavaland-chemicals tr:hover {/*16*/
+    background-color: #444; 
+}
+.dark-mode .collapsible-button-toxins {/*1*/
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.collapsible-button-toxins {/*2*/
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+}
+.collapsible-content-toxins {/*3*/
+    display: block; 
+    max-height: 3000px; 
+    overflow: hidden;
+    transition: max-height 1.0s ease-out;
+    text-align: left;
+}
+
+.collapsible-content-toxins.collapsed {/*4*/
+    max-height: 0; 
+}
+
+.collapsible-content-toxins  table {/*5*/
+    width: 100%;
+    border-collapse: collapse; 
+    color: #333; 
+    font-size: 14px;
+}
+
+.dark-mode .collapsible-content-toxins table {/*6*/
+    color: #f4f4f4; 
+}
+
+.collapsible-content-toxins th,/*7*/
+.collapsible-content-toxins td {/*8*/
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top; 
+}
+
+.dark-mode .collapsible-content-toxins th,/*9*/
+.dark-mode .collapsible-content-toxins td {/*10*/
+    border: 1px solid #555; 
+}
+
+.collapsible-content-toxins th {/*11*/
+    background-color: #f2f2f2; 
+    font-weight: bold;
+}
+
+.dark-mode .collapsible-content-toxins th {/*12*/
+    background-color: #333; 
+}
+
+.collapsible-content-toxins tr:nth-child(even) {/*13*/
+    background-color: #f9f9f9;
+}
+
+.dark-mode .collapsible-content-toxins tr:nth-child(even) {/*14*/
+    background-color: #2a2a2a; 
+}
+
+.collapsible-content-toxins tr:hover {/*15*/
+    background-color: #ddd; 
+}
+
+.dark-mode .collapsible-content-toxins tr:hover {/*16*/
+    background-color: #444; 
+}
+.dark-mode .collapsible-button-impure-inverse-failed-chemicals {/*1*/
+    background-color: #222;
+    color: #f4f4f4;
+    box-shadow: 0 0 0px #ffffff1a;
+}
+.collapsible-button-impure-inverse-failed-chemicals {/*2*/
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    border: none;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+}
+.collapsible-content-impure-inverse-failed-chemicals {/*3*/
+    display: block; 
+    max-height: 3000px; 
+    overflow: hidden;
+    transition: max-height 1.0s ease-out;
+    text-align: left;
+}
+
+.collapsible-content-impure-inverse-failed-chemicals.collapsed {/*4*/
+    max-height: 0; 
+}
+
+.collapsible-content-impure-inverse-failed-chemicals  table {/*5*/
+    width: 100%;
+    border-collapse: collapse; 
+    color: #333; 
+    font-size: 14px;
+}
+
+.dark-mode .collapsible-content-impure-inverse-failed-chemicals table {/*6*/
+    color: #f4f4f4; 
+}
+
+.collapsible-content-impure-inverse-failed-chemicals th,/*7*/
+.collapsible-content-impure-inverse-failed-chemicals td {/*8*/
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top; 
+}
+
+.dark-mode .collapsible-content-impure-inverse-failed-chemicals th,/*9*/
+.dark-mode .collapsible-content-impure-inverse-failed-chemicals td {/*10*/
+    border: 1px solid #555; 
+}
+
+.collapsible-content-impure-inverse-failed-chemicals th {/*11*/
+    background-color: #f2f2f2; 
+    font-weight: bold;
+}
+
+.dark-mode .collapsible-content-impure-inverse-failed-chemicals th {/*12*/
+    background-color: #333; 
+}
+
+.collapsible-content-impure-inverse-failed-chemicals tr:nth-child(even) {/*13*/
+    background-color: #f9f9f9;
+}
+
+.dark-mode .collapsible-content-impure-inverse-failed-chemicals tr:nth-child(even) {/*14*/
+    background-color: #2a2a2a; 
+}
+
+.collapsible-content-impure-inverse-failed-chemicals tr:hover {/*15*/
+    background-color: #ddd; 
+}
+
+.dark-mode .collapsible-content-impure-inverse-failed-chemicals tr:hover {/*16*/
+    background-color: #444; 
+}
+
+
+/*////////////////15h15m////////////////////////*/
